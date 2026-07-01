@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>신약개발 저널 다이제스트</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1a1f2b; --sub:#5b6472;
+    --line:#e6e9ef; --accent:#20558a; --accent2:#0f7b6c; --chip:#eef2f7;
+    --core:#f0f7f4; --coreline:#cfe7de;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    line-height:1.6;}
+  .wrap{max-width:900px;margin:0 auto;padding:32px 20px 80px;}
+  header h1{font-size:27px;margin:0 0 6px;letter-spacing:-.02em;}
+  header .meta{color:var(--sub);font-size:14px;margin-bottom:18px;}
+  .banner{background:#eef6ff;border:1px solid #cfe2f5;border-radius:12px;
+    padding:12px 16px;font-size:13.5px;color:#1c466e;margin-bottom:20px;}
+  .setlabel{font-size:13px;color:var(--sub);margin:0 0 8px;}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+  .chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;
+    padding:4px 11px;font-size:12.5px;color:#3a4250;}
+  .chip.on{background:#e4eef7;border-color:#bcd6ec;color:#1c4d78;font-weight:600;}
+  .chip.on::before{content:"● ";color:#2f8f6f;font-size:10px;}
+  .chip.soon{opacity:.6;}
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 26px;}
+  .toolbar button{font-size:12.5px;border:1px solid var(--line);background:#fff;
+    border-radius:8px;padding:6px 12px;cursor:pointer;color:#3a4250;}
+  .toolbar button:hover{background:#f0f3f7;}
+  h2.jrnl{font-size:15px;margin:26px 0 10px;padding-bottom:7px;
+    border-bottom:2px solid var(--line);display:flex;align-items:center;gap:8px;}
+  h2.jrnl .count{font-size:12px;color:var(--sub);font-weight:400;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    margin-bottom:10px;overflow:hidden;transition:box-shadow .15s;}
+  .card:hover{box-shadow:0 2px 10px rgba(20,40,80,.06);}
+  .head{padding:14px 16px;cursor:pointer;display:flex;gap:12px;align-items:flex-start;}
+  .head .tri{color:var(--accent);font-size:12px;margin-top:5px;transition:transform .15s;flex:none;}
+  .card.open .tri{transform:rotate(90deg);}
+  .head .t{flex:1;}
+  .head .title{font-size:15.5px;font-weight:650;letter-spacing:-.01em;}
+  .head .authors{font-size:12.5px;color:var(--sub);margin-top:3px;}
+  .head .tags{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px;}
+  .tag{font-size:11px;padding:2px 8px;border-radius:6px;background:#eef2f7;color:#43506a;}
+  .tag.type{background:#eaf3ee;color:#1d6b56;}
+  .body{max-height:0;overflow:hidden;transition:max-height .3s ease;
+    border-top:1px solid transparent;}
+  .card.open .body{max-height:2200px;border-top-color:var(--line);}
+  .inner{padding:16px;}
+  .core{background:var(--core);border:1px solid var(--coreline);border-radius:10px;
+    padding:12px 14px;font-size:14px;}
+  .core b{color:var(--accent2);}
+  .detail{margin-top:14px;font-size:13.6px;color:#2b3342;}
+  .detail h4{font-size:12px;text-transform:uppercase;letter-spacing:.04em;
+    color:var(--sub);margin:0 0 6px;}
+  .detail i{color:#7a4d1d;font-style:normal;font-weight:600;}
+  .links{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;}
+  .links a{font-size:12.5px;text-decoration:none;color:var(--accent);
+    border:1px solid #cfe0ef;border-radius:8px;padding:5px 11px;background:#f4f9fd;}
+  .links a:hover{background:#e7f1fa;}
+  footer{margin-top:36px;color:var(--sub);font-size:12px;text-align:center;line-height:1.7;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🧬 신약개발 저널 다이제스트</h1>
+    <div class="meta">융합형 의사과학자용 · 갱신 2026-07-02 (월요일 자동 업데이트) · 출처 PubMed</div>
+  </header>
+
+  <div class="banner">
+    지정한 핵심 저널의 <b>최신 논문</b>을 자동 수집해 신약개발 관점으로 요약합니다.
+    카드를 클릭하면 <b>핵심 3-4줄 요약</b>과 <b>상세 요약</b>·원문 링크가 펼쳐집니다.
+    현재 <b>5개 저널·7편</b> 수록 — 나머지 구독 저널은 매주 월요일 자동 실행 시 채워집니다.
+  </div>
+
+  <p class="setlabel">구독 저널 (● = 이번 갱신 반영)</p>
+  <div class="chips">
+    <span class="chip on">Nature Medicine</span>
+    <span class="chip on">Nature Biotechnology</span>
+    <span class="chip on">New England Journal of Medicine</span>
+    <span class="chip on">Science Translational Medicine</span>
+    <span class="chip on">Cell</span>
+    <span class="chip soon">Nature</span>
+    <span class="chip soon">Science</span>
+    <span class="chip soon">The Lancet</span>
+    <span class="chip soon">JAMA</span>
+    <span class="chip soon">Nature Reviews Drug Discovery</span>
+    <span class="chip soon">Cell Reports Medicine</span>
+    <span class="chip soon">Nature Cancer</span>
+  </div>
+
+  <div class="toolbar">
+    <button onclick="document.querySelectorAll('.card').forEach(c=>c.classList.add('open'))">모두 펼치기</button>
+    <button onclick="document.querySelectorAll('.card').forEach(c=>c.classList.remove('open'))">모두 접기</button>
+  </div>
+
+  <!-- NATURE MEDICINE -->
+  <h2 class="jrnl">Nature Medicine <span class="count">· 2편</span></h2>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div class="t">
+        <div class="title">Clinical decision support in hematological malignancies using a case-grounded AI agent</div>
+        <div class="authors">Zoller J, Kalz M, … Friedrich MJ. · Nat Med. 2026 (online ahead of print)</div>
+        <div class="tags"><span class="tag">AI/디지털헬스</span><span class="tag">혈액암</span><span class="tag type">임상 검증연구</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>
+        혈액암 다학제 종양보드 수준의 치료 의사결정을 <b>로컬 구동 LLM 에이전트(HemaGuide)</b>로 재현했다.
+        비정형 진료기록을 구조화하고 가이드라인·분자 근거로 권고를 생성하며, 45개 고난도 케이스에서 종양보드 결정과의 일치도를 크게 높였다.
+        외부검증 <b>81.8%</b>, 전향적 1개월 무성시험 <b>82.8%</b> 일치, 환각률 <b>0.3%</b>. 상용 하드웨어에서 중앙값 39초로 실시간 구동됐다.
+      </div>
+      <div class="detail"><h4>상세 요약</h4>
+        HemaGuide는 로컬 배포 가능한 모듈형 LLM 에이전트로, 비정형 임상 문서를 구조화된 케이스 표현으로 변환하고
+        'guideline·advanced·molecular' 모드로 자동 라우팅하며, 질환별 가이드라인 플로우차트와 2,000건 이상의 실제 종양보드 케이스 메모리에 근거해 권고를 생성한다.
+        6개 파운데이션 모델·45개 고복잡도 케이스 전문가 블라인드 벤치마크에서 일치도를 크게 개선했고, 11개 레이어 ablation 결과 성능 향상은 라우팅 유형에 의존적이었다.
+        70개 임상 유의 미스센스 변이 자동 분류에서 전문가 기준과 높은 일치를 보였고 종양원성 변이를 양성으로 격하한 사례는 없었다.
+        에이전트 보조 레지던트는 시니어에 근접한 일치도를 달성했고 일부 하위전공에서는 시니어를 상회. 555케이스 외부검증(47개 질환) 81.8%, 64케이스 전향 무성시험 82.8%.
+        <br><br><i>의사과학자 관점:</i> 감사가능(auditable)·로컬 구동 의사결정 지원은 분자종양보드 접근성 격차를 줄이고, 정밀의료·신약 적용의 실사용 데이터 축적에 유용하다.
+      </div>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42380678/" target="_blank">PubMed</a>
+        <a href="https://doi.org/10.1038/s41591-026-04494-4" target="_blank">DOI ↗</a>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div class="t">
+        <div class="title">Multi-antigen-targeting T cells in pediatric central nervous system tumors: a phase 1 trial</div>
+        <div class="authors">Nat Med. 2026 (online ahead of print) · ReMIND study</div>
+        <div class="tags"><span class="tag">세포치료</span><span class="tag">소아 뇌종양</span><span class="tag type">1상 임상시험</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>
+        소아 CNS 종양 대상 <b>WT1·PRAME·survivin 삼중 표적 자가·비유전자조작 T세포</b> 치료의 1상(ReMIND).
+        세포내 종양연관항원을 유전자조작 없이 표적하도록 제조한 T세포를 전신 투여해 <b>안전성·실현가능성</b>을 평가하는 open-label 적응형 용량탐색 연구다.
+        DIPG 등 예후가 극히 불량한 소아 뇌종양에 새로운 면역치료 플랫폼을 시험했다.
+      </div>
+      <div class="detail"><h4>상세 요약</h4>
+        CNS 종양은 소아암 중 치명률이 가장 높아 새 치료가 절실하다. TAA인 WT1·PRAME·survivin은 이들 종양에 널리 발현되며,
+        연구진은 이 세포내 TAA들을 자가·비유전자조작 T세포로 표적하는 제조기법을 개발했다. ReMIND는 이 삼중 표적 T세포를 전신 투여하는
+        open-label phase 1 적응형 용량탐색 시험으로, 신규 진단 DIPG 등을 포함한 소아 CNS 종양 환자에서 안전성·실현가능성을 평가한다.
+        <br><br><i>의사과학자 관점:</i> 유전자조작 없이 내인성 T세포로 다중 항원을 동시 표적한다는 점에서 제조 단순성·안전성 측면의 차별점.
+        (자동 수집 시 초록 앞부분만 확보 — 구체 효능·용량은 원문 확인 권장.)
+      </div>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42380677/" target="_blank">PubMed</a>
+        <a href="https://doi.org/10.1038/s41591-026-04449-9" target="_blank">DOI ↗</a>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- NEJM -->
+  <h2 class="jrnl">New England Journal of Medicine <span class="count">· 1편</span></h2>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div class="t">
+        <div class="title">Phase 3 Trial of Oral Infigratinib in Children with Achondroplasia</div>
+        <div class="authors">Savarirayan R, et al. · N Engl J Med. 2026 Jun 28 (online ahead of print) · PROPEL 3</div>
+        <div class="tags"><span class="tag">희귀질환</span><span class="tag">FGFR 억제제</span><span class="tag type">3상 RCT</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>
+        연골무형성증(FGFR3 변이) 소아 대상 <b>경구 FGFR1-3 억제제 infigratinib</b>의 3상(PROPEL 3). 3~17세 114명을 2:1 무작위배정, 52주 투여.
+        연간 신장성장속도가 위약 대비 <b>+1.74 cm/년</b>(95% CI 1.31–2.17, <b>P&lt;0.001</b>) 유의 증가, 신장 z-score도 +0.32 개선.
+        중대 이상반응은 약물 관련 없음 — <b>경구제</b>라 기존 주사제 대비 순응도 강점 잠재.
+      </div>
+      <div class="detail"><h4>상세 요약</h4>
+        <b>배경/방법:</b> 연골무형성증은 FGFR3 병적변이로 생기는 유전성 골격질환. Infigratinib는 병인 경로를 하향조절하는 경구 FGFR1-3 TKI다.
+        이 다기관 이중맹검 위약대조 3상에서 3~17세 소아를 infigratinib 0.25 mg/kg 1일1회 또는 위약에 2:1 배정해 52주 투여. 1차 지표는 52주째 연간 신장성장속도 변화.
+        <br><b>결과:</b> 114명 무작위배정(infigratinib 75, 위약 39). 52주 최소제곱평균 변화 차이 — 연간 성장속도 +1.74 cm/년(P&lt;0.001), 신장 z-score +0.32(P&lt;0.001), 상하절비 -0.02(비유의).
+        이상반응 발생률은 양군 유사(96% vs 95%), 중대 이상반응 5% vs 3%이며 약물 관련은 없었다.
+        <br><b>결론:</b> 경구 infigratinib 52주 투여가 위약 대비 연간 성장속도를 유의하게 증가시켰다. (BridgeBio, NCT06164951)
+        <br><br><i>의사과학자 관점:</i> FGFR3 표적 경구 저분자로, CNP 유사체 주사제(vosoritide) 대비 복약편의·순응도 잠재 강점. 소아 희귀질환 표적치료 개발의 최신 사례.
+      </div>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42370681/" target="_blank">PubMed</a>
+        <a href="https://doi.org/10.1056/NEJMoa2604565" target="_blank">DOI ↗</a>
+        <a href="https://clinicaltrials.gov/study/NCT06164951" target="_blank">ClinicalTrials ↗</a>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- SCI TRANSL MED -->
+  <h2 class="jrnl">Science Translational Medicine <span class="count">· 1편</span></h2>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div class="t">
+        <div class="title">Kbtbd13 knockdown restores muscle function in a clinically relevant mouse model of nemaline myopathy type 6</div>
+        <div class="authors">Sci Transl Med. 2026 (online ahead of print)</div>
+        <div class="tags"><span class="tag">유전자치료(RNAi)</span><span class="tag">희귀 근병증</span><span class="tag type">전임상</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>
+        네말린 근병증 6형(NEM6, KBTBD13 변이)에서 <b>AAV9-shRNA로 Kbtbd13을 knockdown</b>하는 유전자치료 접근.
+        임상 유사 knockin 마우스에서 근수축·이완 이상과 네말린 로드 응집을 예방/회복했다.
+        <b>발병 후 3개월째 단회 치료</b>로 6개월간 근형태·수축·이완이 회복 — 표적 knockdown 치료전략의 근거.
+      </div>
+      <div class="detail"><h4>상세 요약</h4>
+        NEM6는 KBTBD13 병적변이로 생기는 희귀 신경근질환으로 근력약화·피로·이완장애를 유발하나 특이치료가 없다.
+        Kbtbd13:p.Arg408Cys knockin 마우스는 인간 병리를 형태·기능·전사수준에서 유사하게 재현했다.
+        연구진은 AAV9 벡터로 Kbtbd13에 대한 shRNA를 근육내 전달해 knockdown했다.
+        발병 전(1개월) 단회 치료는 이완속도 장애·네말린 로드 응집·slow-twitch 우세를 예방했고, 발병 후(3·7개월) 단회 치료는 6개월에 걸쳐 근형태·수축·이완 kinetics를 회복시켰다.
+        <br><br><i>의사과학자 관점:</i> AAV 기반 RNAi로 희귀 근병증의 우성 변이를 표적하는 전임상 개념증명. 유전자치료 파이프라인·표적발굴 관점에서 주목할 만하다.
+      </div>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42341083/" target="_blank">PubMed</a>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- CELL -->
+  <h2 class="jrnl">Cell <span class="count">· 1편</span></h2>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div class="t">
+        <div class="title">Arc mediates intercellular tau transmission via extracellular vesicles</div>
+        <div class="authors">Cell. 2026 (online ahead of print)</div>
+        <div class="tags"><span class="tag">신경퇴행</span><span class="tag">타우/알츠하이머</span><span class="tag type">기전연구</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>
+        타우 병리의 <b>세포간 전파 기전</b>을 규명 — 뉴런 유전자 <b>Arc</b>이 타우를 세포외소포(EV)에 실어 방출하는 데 핵심(직접 단백질 상호작용).
+        Arc KO 시 EV 내 타우·시딩이 감소하고 세포간 타우 전파가 거의 소실됐다.
+        인간 AD 뇌 EV에서 Arc은 인산화 타우와 강한 양의 상관 — <b>타우 전파 차단 신약표적</b> 후보.
+      </div>
+      <div class="detail"><h4>상세 요약</h4>
+        타우 병리는 세포에서 세포로 전파되나 기전은 불명확했다. 연구진은 뉴런 유전자 Arc이 직접 단백질-단백질 상호작용으로 타우를 뉴런 EV로 방출하는 데 핵심임을 발견했다.
+        rTg4510 변이 타우 마우스를 Arc KO와 교배하면 뇌 EV의 타우량·시딩 잠재력이 감소했다. Arc과 타우는 마우스·인간 뇌 EV에 공동 패키징되며,
+        인간 AD 뇌 EV의 Arc 수준은 인산화 EV-타우와 강한 양의 상관을 보였다. Arc KO 마우스는 세포내 타우 축적이 증가하고 초기 독성은 약간 늘었으나 세포간 타우 전파는 거의 없었다.
+        <br><br><i>의사과학자 관점:</i> Arc-타우 상호작용 또는 EV 패키징 차단이 타우병증(알츠하이머 등)의 진행을 늦추는 새로운 치료표적이 될 수 있다.
+      </div>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42372723/" target="_blank">PubMed</a>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- NATURE BIOTECHNOLOGY -->
+  <h2 class="jrnl">Nature Biotechnology <span class="count">· 2편</span></h2>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div class="t">
+        <div class="title">Retargeted serine integrases for one-step, precise integration of large DNA sequences in human cells</div>
+        <div class="authors">Nat Biotechnol. 2026 (online ahead of print) · MINT system</div>
+        <div class="tags"><span class="tag">유전자편집</span><span class="tag">세포치료 제조</span><span class="tag type">방법론</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>
+        대용량 DNA를 특정 유전체 부위에 정밀 삽입하는 <b>serine integrase Bxb1을 원하는 위치로 재표적</b>하는 모듈형 MINT 시스템을 개발.
+        구조모델링+지향진화+세포 스크리닝으로 특이성을 바꿔, 야생형이 활성 없던 <b>AAVS1·TRAC</b>에 통합했다.
+        K562에서 29~35%, 인간 T세포 TRAC에 GFP 29% 통합 효율 — CAR-T 등 정밀 knock-in 제조 플랫폼 후보.
+      </div>
+      <div class="detail"><h4>상세 요약</h4>
+        Serine integrase는 대형 DNA를 특정 부위에 정밀 통합할 수 있으나 자연 표적부위를 먼저 삽입해야 한다는 제약이 있었다.
+        연구진은 모듈형 integrase(MINT)를 개발해 구조 모델링·단일 라운드 지향진화·인간세포 스크리닝으로 Bxb1의 특이성을 재표적했다.
+        야생형 Bxb1이 활성 없던 인간 AAVS1·TRAC 유전자좌를 표적해 치료 잠재력을 입증했고, 활성증가 변이·zinc-finger DBD와 결합해 K562에서 AAVS1 29%·TRAC 35% 효율,
+        인간 T세포 TRAC에 GFP 29% 통합을 달성했다.
+        <br><br><i>의사과학자 관점:</i> 바이러스 벡터의 무작위 삽입 안전성 한계를 넘어, 대용량 카세트를 안전한 하버(AAVS1)나 TRAC(내인성 TCR knock-out 동시)로 정밀 knock-in하는 차세대 세포치료 제조에 직접 응용 가능.
+      </div>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42374116/" target="_blank">PubMed</a>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div class="t">
+        <div class="title">Experiment-guided AlphaFold3 resolves measurement-consistent protein ensembles</div>
+        <div class="authors">Nat Biotechnol. 2026 (online ahead of print)</div>
+        <div class="tags"><span class="tag">AI 구조예측</span><span class="tag">구조기반 신약설계</span><span class="tag type">방법론</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>
+        AlphaFold3가 이질적 구조도 <b>단일 우세 형태로 붕괴</b>시키는 한계를 NMR·X선·cryo-EM 데이터로 가이드해 극복.
+        실험 관측치와 일치하는 <b>컴팩트한 구조 앙상블</b>을 생성하고 동역학(order parameter)까지 반영한다.
+        기존 NMR 구조보다 거리제약 위반이 적어, '실험 인지형' 예측모델로 구조기반 약물설계에 함의가 크다.
+      </div>
+      <div class="detail"><h4>상세 요약</h4>
+        AF3는 서열로부터 고정밀 구조를 예측하지만 본질적으로 이질적인 구조도 단일 우세 형태로 붕괴하고 실험 조건을 반영하지 못한다.
+        본 연구는 AF3를 NMR 분광·X선 결정학·cryo-EM 및 이들 조합 데이터에 부합하도록 유도하고, 부위별 order parameter 같은 동역학 데이터도 통합한다.
+        그 결과 앙상블 평균 관측치가 실험과 일치하는 컴팩트한 구조 앙상블을 생성했으며, 전통적 NMR 구조보다 거리제약 위반이 적고 전자밀도의 미모델링 대체형태를 규명했다.
+        에너지론을 결합하면 열역학적으로 근거 있는 앙상블로 정교화할 수 있다.
+        <br><br><i>의사과학자 관점:</i> 표적 단백질의 동적 구조 앙상블을 실험적으로 정합하게 예측하면 알로스테릭 부위·크립틱 포켓 발굴과 구조기반/단편기반 약물설계의 정확도를 높일 수 있다.
+      </div>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42374114/" target="_blank">PubMed</a>
+      </div>
+    </div></div>
+  </div>
+
+  <footer>
+    데이터 출처: PubMed (NCBI, 공개 서지정보·초록 기반) · 매주 월요일 아침 자동 갱신<br>
+    유료 저널의 전문(full text)은 소속 기관 도서관 프록시로 열람하세요. 요약은 공개 초록 기반이며 임상 판단 전 원문 확인을 권장합니다.
+  </footer>
+</div>
+</body>
+</html>
