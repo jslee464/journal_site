@@ -71,19 +71,19 @@
 <header>
   <h1 class="brand">Drug Development <span class="accent">Digest</span></h1>
   <p class="sub">신약개발 융합형 의사과학자를 위한 논문 브리핑</p>
-  <p class="meta">UPDATED 2026-07-01 · 최근 한 달 · 10개 저널 · 29편 · SOURCE PubMed · SUMMARY OpenAI</p>
+  <p class="meta">UPDATED 2026-07-06 · 최근 한 달 · 8개 저널 · 28편 · SOURCE PubMed · SUMMARY OpenAI</p>
   <div class="rule"></div>
 </header>
 <nav class="subnav"><div class="inner">
 <a class="chip" href="#nature-medicine">Nature Medicine</a>
 <a class="chip" href="#nature-biotechnology">Nature Biotechnology</a>
-<a class="chip" href="#new-england-journal-of-medicine">New England Journal of Medicine</a>
+<span class="chip soon">New England Journal of Medicine</span>
 <a class="chip" href="#science-translational-medicine">Science Translational Medicine</a>
 <a class="chip" href="#cell">Cell</a>
-<span class="chip soon">Nature</span>
+<a class="chip" href="#nature">Nature</a>
 <a class="chip" href="#science">Science</a>
-<a class="chip" href="#the-lancet">The Lancet</a>
-<a class="chip" href="#jama">JAMA</a>
+<span class="chip soon">The Lancet</span>
+<span class="chip soon">JAMA</span>
 <span class="chip soon">Nature Reviews Drug Discovery</span>
 <a class="chip" href="#cell-reports-medicine">Cell Reports Medicine</a>
 <a class="chip" href="#nature-cancer">Nature Cancer</a>
@@ -95,63 +95,78 @@
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Clinical decision support in hematological malignancies using a case-grounded AI agent.</div>
-        <div class="authors">Zoller J, Kalz M, Wu X et al. · Nature medicine 2026</div>
-        <div class="tags"><span class="tag">혈액암</span><span class="tag">AI</span><span class="tag type">임상결정지원</span></div>
+        <div class="title">Generalizable AI predicts immunotherapy outcomes across cancers and treatments.</div>
+        <div class="authors">Shen W, Moon I, Nguyen TH et al. · Nature medicine 2026</div>
+        <div class="tags"><span class="tag">면역치료</span><span class="tag">AI모델</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>HemaGuide는 비구조적 임상 문서를 구조화된 사례 표현으로 변환하고, 전문 결정 모드로 자율적으로 사례를 라우팅하여 혈액암 치료 결정을 지원하는 AI 모델입니다. 45개의 고복잡성 사례에서 종양 위원회 결정과의 일치율을 크게 향상시켰으며, 555개의 독립 사례에서 81.8%의 일치율을 기록했습니다.</div>
-      <div class="detail"><h4>상세 요약</h4>혈액암 치료에 있어 다학제 종양 위원회는 치료 이력, 분자 프로파일링 및 최신 증거를 통합하여 결정을 내리지만, 이러한 전문적인 논의에 대한 접근은 불균형적입니다. 본 연구에서는 HemaGuide라는 모듈형 대형 언어 모델 에이전트를 개발하여 비구조적 임상 문서를 구조화된 사례로 변환하고, 사례를 전문 결정 모드로 자율 라우팅하며, 2,000개 이상의 실제 종양 위원회 사례에 기반한 권장 사항을 제공합니다. 45개의 고복잡성 사례에 대한 전문가 블라인드 벤치마킹에서 HemaGuide는 종양 위원회 결정과의 일치성을 크게 향상시켰습니다. 11개 레이어에 대한 체계적인 제거 연구를 통해 성능 향상이 라우팅 유형에 따라 달라지며, 단일 구성 요소가 모든 사례 유형에 충분하지 않음을 확인했습니다. 70개의 임상적으로 관련된 미스센스 변이의 자동 분류는 전문가 기준과 높은 일치율을 보였으며, 전체 워크플로우는 일반 하드웨어에서 실시간 조건 하에 평균 39초 만에 완료되었습니다. 시뮬레이션 연구에서는 에이전트 지원 하에 거주 의사들이 거의 선임 의사와 일치하는 성과를 보였고, 64개의 연속 사례에 대한 1개월의 조용한 시험에서 82.8%의 일치율을 달성했습니다. 이러한 데이터는 지역적으로 배포 가능한 사례 기반 대형 언어 모델 에이전트가 혈액암에서 감사 가능한 임상 결정 지원을 제공할 수 있음을 보여줍니다. 의사과학자 관점: 이는 신약개발 및 표적 치료에 있어 AI 기반의 임상 지원 시스템의 가능성을 시사합니다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42380678/" target="_blank">PubMed</a><a href="https://doi.org/10.1002/humu.22932" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>COMPASS는 33종 암에서 10,184개의 종양을 기반으로 면역치료 반응을 예측하는 범암 모델로, 기존 22개 방법보다 평균 8.5% 정확도를 향상시켰습니다. 이 모델은 치료 유형과 관계없이 일반화 가능하며, 반응자로 분류된 환자는 생존율이 유의미하게 증가했습니다.</div>
+      <div class="detail"><h4>상세 요약</h4>면역 체크포인트 억제제(ICIs)는 다양한 암 치료의 표준이지만, 대부분의 환자는 반응하지 않으며 기존 바이오마커는 암 유형과 치료에 따라 일반화가 어렵습니다. COMPASS는 44개의 생물학적 면역 개념을 통해 종양 전사체에서 면역치료 반응을 예측하는 모델로, 33종 암에서 10,184개의 종양 데이터를 학습하였습니다. COMPASS는 16개의 임상 집단에서 22개 방법보다 평균 8.5% 정확도와 15.7%의 정밀-재현 곡선 아래 면적을 개선하였으며, 미세 조정 시 포함되지 않은 암 유형과 치료에도 일반화됩니다. 생존 분석에서 COMPASS에 의해 반응자로 분류된 환자는 전체 생존 기간이 길어졌으며(위험비 4.7, P&lt;0.0001), 개인 맞춤형 반응 맵을 통해 면역 개념과 관련된 유전자 발현 프로그램을 식별하였습니다. COMPASS는 면역치료 반응을 예측하고 임상 시험 설계 및 번역 연구를 위한 기계적 통찰력을 제공합니다. 의사과학자 관점: COMPASS는 신약개발에서 면역치료의 표적 및 플랫폼 개발에 중요한 기초 자료를 제공합니다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42399673/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2018.02.052" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Multi-antigen-targeting T cells in pediatric central nervous system tumors: a phase 1 trial.</div>
-        <div class="authors">Gomez S, DiCioccio RA, Geiger AE et al. · Nature medicine 2026</div>
-        <div class="tags"><span class="tag">소아암</span><span class="tag">임상시험</span><span class="tag type">면역치료</span></div>
+        <div class="title">Immune aging biomarkers for clinical trials.</div>
+        <div class="authors">Cipriano A, Justice J, Poganik JR et al. · Nature medicine 2026</div>
+        <div class="tags"><span class="tag">면역학</span><span class="tag">노화</span><span class="tag type">바이오마커</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>소아 중추신경계(CNS) 종양을 대상으로 한 1상 임상시험에서, WT1, PRAME, survivin을 표적하는 자가 T 세포 치료의 안전성과 가능성을 평가하였다. 최대 허용 용량은 8×10^7 세포/m²로 결정되었으며, 치료는 잘 견디는 것으로 나타났다. 일부 환자에서 생존 신호가 관찰되었다.</div>
-      <div class="detail"><h4>상세 요약</h4>소아 CNS 종양은 가장 치명적인 암으로, 새로운 치료법의 필요성이 강조된다. 본 연구에서는 자가 T 세포를 사용하여 WT1, PRAME, survivin을 표적하는 치료의 안전성과 가능성을 평가하기 위해 ReMIND라는 개방형 1상 적응 용량 탐색 연구를 수행하였다. 총 51명의 환자가 등록되었고, 최대 허용 용량은 8×10^7 세포/m²로 결정되었다. 치료는 피로와 두통을 포함한 경미한 부작용이 있었으나, 두 건의 심각한 부작용이 발생하였다. A군의 중앙 생존 기간은 13.7개월, B/C군의 중앙 무진행 생존 기간은 5.0개월이었다. 일부 환자에서 질병 없이 생존하는 사례가 관찰되었다. 이 시험은 안전성과 가능성의 주요 목표를 충족하였으며, 일부 효능의 초기 신호가 관찰되었다. 의사과학자 관점: 이 연구는 소아 CNS 종양 치료를 위한 새로운 표적 치료 플랫폼의 가능성을 제시한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42380677/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.copbio.2020.07.010" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>노화는 면역 시스템을 심각하게 재구성하여 방어 및 회복 기능을 저하시킵니다. 본 연구에서는 면역 노화 바이오마커를 식별하기 위한 전이적 프레임워크를 수립하고, 다차원 면역 기능 지표와 염증 노화 점수가 최상의 평가 기준을 충족함을 보여주었습니다.</div>
+      <div class="detail"><h4>상세 요약</h4>노화는 면역 시스템의 기능을 저하시켜 전신적 기능 장애를 유발하고 생물학적 노화를 가속화하는 것으로 제안됩니다. 본 연구에서는 면역 노화 바이오마커를 정량화하기 위한 합의된 방법이 없음을 지적하며, 다섯 가지 평가 기준을 정의하고 이를 후보 바이오마커에 적용했습니다. 다차원 면역 기능 지표와 염증 노화 점수, 기능적 분석이 가장 우수한 성과를 보였으며, 신뢰할 수 있는 면역 능력 바이오마커 개발을 위한 중요한 격차도 확인했습니다. 이 프레임워크는 면역 적합성과 회복력을 정량화할 수 있는 임상적으로 의미 있는 면역 노화 바이오마커로의 실질적인 경로를 제공합니다. 의사과학자 관점: 신약개발에 있어 면역 노화 바이오마커는 표적 및 플랫폼 개발에 중요한 함의를 가집니다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42399672/" target="_blank">PubMed</a><a href="https://doi.org/10.1056/NEJMoa1707914" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Re-administration of AAV-mediated gene therapy for OTOF-related deafness: a single-arm trial.</div>
-        <div class="authors">Fan X, Zhang L, Gao Z et al. · Nature medicine 2026</div>
-        <div class="tags"><span class="tag">유전자 치료</span><span class="tag">임상 시험</span><span class="tag type">청각</span></div>
+        <div class="title">Polypill for heart failure with reduced ejection fraction: the POLY-HF randomized trial.</div>
+        <div class="authors">Pandey A, Keshvani N, Rizvi SK et al. · Nature medicine 2026</div>
+        <div class="tags"><span class="tag">심부전</span><span class="tag">임상시험</span><span class="tag type">의사과학</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>AAV 매개 유전자 치료의 재투여가 NAbs로 인해 도전적이나, OTOF 관련 난청 환자에서 안전성과 청력 개선을 보였다. 4명의 환자에서 청력 역치가 95dB에서 43-80dB로 개선되었으며, 중대한 부작용은 없었다.</div>
-      <div class="detail"><h4>상세 요약</h4>AAV 매개 유전자 치료는 초기 투여로 인한 중화 항체(NAbs)로 인해 재투여가 어려운 상황이다. 본 연구에서는 Otof-/- 쥐에서 AAV1-hOTOF의 재투여가 청력을 회복시키고 면역 반응이 제한적임을 보여주었다. 이후 NAbs가 있는 4명의 환자를 대상으로 재투여 임상시험을 진행하였고, 6주 내에 용량 제한 독성이 발생하지 않았다. 26주 후 청력 역치가 개선되었으며, 모든 부작용은 경증으로 나타났다. 이러한 결과는 선천성 난청 환자에서 AAV1-hOTOF 유전자 치료의 재투여에 대한 안전성과 효능에 대한 초기 통찰을 제공한다. 의사과학자 관점: 신약개발에서 유전자 치료의 반복 투여 가능성을 제시한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42362868/" target="_blank">PubMed</a><a href="https://doi.org/10.1179/1754762812Y.0000000014" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>심박출률 감소 심부전 환자에서 폴리필 전략이 심장 기능을 개선하는지 평가한 POLY-HF 임상 시험에서, 폴리필 치료가 기존 치료보다 심박출률을 3.3%p 더 개선하고, 입원 및 응급실 방문율을 60% 낮추는 결과를 보였다.</div>
+      <div class="detail"><h4>상세 요약</h4>심박출률 감소 심부전은 예후가 좋지 않으며, 가이드라인에 따른 약물 치료의 실제 사용이 낮다. 본 연구는 두 개 센터에서 주로 소외된 인구를 대상으로 폴리필 전략이 심장 기능을 개선하는지 평가하기 위해 진행되었다. 심박출률이 40% 이하인 성인을 대상으로 폴리필(메토프롤롤, 스피로노락톤, 엠파글리플로진 포함) 또는 개별 약물의 신속한 증량 치료를 비교하였다. 212명의 환자가 무작위 배정되었고, 187명에서 6개월 후 심장 자기공명영상 결과가 분석되었다. 폴리필 치료는 심박출률 개선에서 유의미한 결과를 보였고, 입원율 및 응급실 방문율도 감소하였다. 약물 순응도는 폴리필 치료군에서 더 높았으며, 부작용 발생률은 낮았다. 의사과학자 관점: 폴리필 전략은 심부전 치료에 있어 새로운 접근법을 제시하며, 신약개발 및 표적 치료 플랫폼에 중요한 함의를 가진다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42393373/" target="_blank">PubMed</a><a href="https://doi.org/10.1001/jamacardio.2020.0640" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial.</div>
-        <div class="authors">Agweyu A, Mwaniki P, Menon V et al. · Nature medicine 2026</div>
-        <div class="tags"><span class="tag">의사과학</span><span class="tag">신약개발</span><span class="tag type">임상시험</span></div>
+        <div class="title">Innate immune responsiveness predicts enhanced cellular immunity and symptomatic disease after controlled human influenza infection.</div>
+        <div class="authors">Papargyris L, Xu J, Broderick C et al. · Nature medicine 2026</div>
+        <div class="tags"><span class="tag">면역학</span><span class="tag">신약개발</span><span class="tag type">인플루엔자</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 케냐의 16개 1차 진료 시설에서 대규모 언어 모델(LLM)의 임상 지원 시스템의 효과를 평가하기 위해 진행된 클러스터 무작위 시험이다. 9,691명의 환자가 등록되었고, LLM 지원을 받은 그룹과 받지 않은 그룹 간 치료 실패율은 각각 2.2%와 2.0%로 통계적으로 유의미한 차이가 없었다.</div>
-      <div class="detail"><h4>상세 요약</h4>대규모 언어 모델의 실제 저자원 임상 환경에서의 성능에 대한 엄격한 증거가 부족한 상황에서, 본 연구는 2025년 4월 22일부터 7월 16일까지 케냐의 16개 1차 진료 시설에서 진행되었다. 임상 담당자는 LLM 지원 전자 의료 기록을 사용할지 여부에 따라 무작위로 배정되었고, 치료 실패 사건의 주요 결과는 전문가에 의해 판별된 복합 지표로 정의되었다. LLM 지원 그룹에서 치료 실패는 4,693명 중 102명(2.2%)에서 발생하였고, 대조군에서는 4,654명 중 94명(2.0%)에서 발생하였다. 두 그룹 간의 치료 실패율 차이는 통계적으로 유의미하지 않았으며, LLM 지원의 안전성은 확인되었으나 치료 실패를 줄이는 데 효과적이지 않았다. 의사과학자 관점: LLM의 안전성은 입증되었으나, 신약개발에 있어 치료 실패를 줄이는 데 실질적인 기여는 미미할 것으로 보인다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42362867/" target="_blank">PubMed</a><a href="https://doi.org/10.1136/bmj.e5661" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>이 연구는 인플루엔자 A/H3N2 바이러스에 감염된 27명의 건강한 자원자를 대상으로 초기 면역 요인이 임상 결과와 어떻게 연관되는지를 조사하였다. 증상이 있는 참가자들은 더 높은 수준의 선천적 면역 반응을 보였으며, 이는 증상 점수와 상관관계가 있었다.</div>
+      <div class="detail"><h4>상세 요약</h4>연구 배경으로, 통제된 인플루엔자 감염 연구는 초기 면역 요인을 분석하는 데 유용하다. 27명의 건강한 자원자를 인플루엔자 A/H3N2 바이러스에 감염시켰고, 22명이 감염되었으며, 이 중 18명이 경증에서 중등증 증상을 나타냈다. 면역 프로파일링 결과, 증상이 있는 참가자들은 더 빠르고 높은 수준의 선천적 면역 경로가 활성화되었으며, 이는 자연 살해 세포와 CD8+ T 세포의 활성화 증가와 관련이 있었다. 증상이 있는 참가자들의 말초 혈액 단핵 세포는 감염 전 인 비트로 도전에 더 잘 반응하여, 감염 시 면역학적 결과의 차이를 예측할 수 있는 경향을 보였다. 이러한 결과는 인간의 선천적 세포 반응성이 증상 질병과 세포 면역 반응의 예측 인자임을 보여주며, 치료 개입의 잠재적 표적을 제시한다. 의사과학자 관점: 신약개발에 있어 선천적 면역 반응의 조절이 중요할 수 있다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42387215/" target="_blank">PubMed</a><a href="https://doi.org/10.1093/bioinformatics/btw313" target="_blank">DOI ↗</a></div>
     </div></div>
   </div><section id="nature-biotechnology" class="jrnl"><span class="tick"></span><h2>Nature Biotechnology</h2><span class="count">4편</span></section>
 
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div>
+        <div class="title">A genome-scale CRISPRi perturbation atlas of human induced pluripotent stem cells.</div>
+        <div class="authors">Nourreddine S, Doctor Y, Dailamy A et al. · Nature biotechnology 2026</div>
+        <div class="tags"><span class="tag">유전자 연구</span><span class="tag">CRISPR</span><span class="tag type">줄기세포</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>본 연구는 KOLF2.1J 인간 유도 다능성 줄기세포에서 유전자형과 표현형 간의 관계를 포괄적으로 매핑하여 11,692개의 변형 유전자와 관련된 전사적 표현형을 250만 개 이상의 단일 세포에서 분석하였다. 이를 통해 다능성 상태의 세포 맵을 생성하고, ZBTB41 및 RNF7의 기능을 검증하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>유전자형과 표현형 간의 관계를 이해하는 것은 세포 상태의 유전적 요소를 파악하는 데 필수적이다. 본 연구에서는 CRISPRi 변형 세포 아틀라스를 생성하여, 11,692개의 변형 유전자와 관련된 전사적 표현형을 250만 개 이상의 단일 세포에서 매핑하였다. 이 아틀라스를 통해 다능성 상태의 세포 맵을 작성하고, 기능적으로 관련된 단백질 복합체를 재현하였다. 또한, 대사 인자 ZBTB41과 다능성 조절자 RNF7의 기능을 검증하였으며, A-to-I RNA 편집 조절제의 유전체 규모 스크리닝을 통해 DBR1을 강력한 조절자로 확인하였다. 이러한 데이터는 다능성을 지배하는 조절 네트워크를 조사하는 데 유용한 자원을 제공한다. 의사과학자 관점: 본 연구는 신약개발에 있어 다능성 조절 네트워크의 이해를 통해 새로운 표적 발굴의 가능성을 제시한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42386990/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2016.06.011" target="_blank">DOI ↗</a></div>
+    </div></div>
+  </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
@@ -162,8 +177,8 @@
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>fPE7max는 필라멘트 곰팡이를 위한 최적화된 프라임 편집 플랫폼으로, 평균 90%에 가까운 편집 효율을 보여준다. 이 플랫폼은 대규모 삽입 및 삭제를 가능하게 하며, 곰팡이의 대사 출력을 조절하는 데 성공적으로 활용되었다.</div>
-      <div class="detail"><h4>상세 요약</h4>필라멘트 곰팡이는 생태계와 산업에서 중요한 역할을 하며, 그들의 생합성 능력을 활용하기 위한 새로운 유전자 편집 기술이 필요하다. 본 연구에서는 fPE7max라는 프라임 편집 플랫폼을 개발하였으며, 이는 다양한 유전자 편집 유형을 지원하고, 여러 유전체 위치와 종에서 높은 편집 효율을 보인다. 우리는 laeA 유전자의 상류 개방 읽기 프레임을 조작하여 여러 곰팡이 종의 대사 출력을 조절하였고, 그 결과 18개의 대사체를 확인하였으며, 이 중 8개는 이전에 보고되지 않은 구조로, 3개는 세포독성 활성을 보였다. 이러한 결과는 fPE7max가 필라멘트 곰팡이에서 유전자 공학을 위한 효율적인 플랫폼임을 입증하며, 상류 개방 읽기 프레임 편집이 내재적 조절 네트워크를 조절하고 곰팡이 화학 물질을 접근하는 전략으로 작용할 수 있음을 보여준다. 의사과학자 관점: 신약개발에 있어 곰팡이의 대사 조절은 새로운 화합물 발견에 기여할 수 있다.</div>
+      <div class="core"><b>핵심 요약</b><br>fPE7max는 필라멘트 곰팡이에 최적화된 프라임 편집 플랫폼으로, 평균 90%에 가까운 편집 효율을 보이며 다양한 유전자 편집을 지원한다. 이 플랫폼을 통해 곰팡이의 대사 출력을 조절하고, 새로운 대사물질 18종을 발견하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>필라멘트 곰팡이는 생태계와 산업에서 중요한 역할을 하며, 이들의 유전자 편집 기술이 필요하다. 본 연구에서는 fPE7max라는 프라임 편집 플랫폼을 개발하였으며, 다양한 유전자 편집 유형을 지원하고 평균 90%의 편집 효율을 기록하였다. 또한, 최대 1kb의 삽입 및 10kb의 삭제가 가능하다. laeA 유전자의 상류 개방 읽기 프레임을 조절하여 여러 곰팡이 종의 대사 출력을 변화시켰고, 그 결과 18종의 대사물질을 확인하였다. 이 중 8종은 이전에 보고되지 않은 구조이며, 3종은 세포독성 활성을 보였다. 이러한 결과는 fPE7max가 필라멘트 곰팡이의 유전자 공학을 위한 효율적인 플랫폼임을 입증하며, 상류 개방 읽기 프레임 편집이 내재적 조절 네트워크를 조절하고 곰팡이 화학 물질의 다양성을 탐색하는 전략으로 작용할 수 있음을 보여준다. 의사과학자 관점: 신약개발에 있어 곰팡이의 대사물질 활용 가능성을 제시한다.</div>
       <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42380278/" target="_blank">PubMed</a><a href="https://doi.org/10.21769/BioProtoc.424" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
@@ -173,12 +188,12 @@
       <div>
         <div class="title">Retargeted serine integrases for one-step, precise integration of large DNA sequences in human cells.</div>
         <div class="authors">Fauser F, Arangundy-Franklin S, Davis JE et al. · Nature biotechnology 2026</div>
-        <div class="tags"><span class="tag">유전자 편집</span><span class="tag">생명공학</span><span class="tag type">의사과학</span></div>
+        <div class="tags"><span class="tag">유전자 편집</span><span class="tag">의사과학</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구에서는 세린 인테그레이스를 특정 유전자 위치에 정밀하게 통합할 수 있는 모듈형 인테그레이스 시스템(MINT)을 개발하였다. MINT 시스템을 통해 AAVS1 및 TRAC 유전자 위치에서 각각 29% 및 35%의 통합 효율을 달성하였으며, 인간 T 세포에서도 29%의 GFP 통합 효율을 보였다.</div>
-      <div class="detail"><h4>상세 요약</h4>세린 인테그레이스는 대형 DNA 구조를 원하는 염색체 위치에 정밀하게 통합할 수 있지만, 자연적인 표적 위치가 먼저 수용체 유전체에 설치되어야 한다. 본 연구에서는 구조 모델링, 단일 라운드 지향 진화 및 인간 세포에서의 스크리닝을 통해 Bxb1의 특이성을 재타겟팅하는 MINT 시스템을 개발하였다. MINT 시스템을 활용하여 Bxb1을 인간 AAVS1 및 TRAC 유전자 위치에 재타겟팅하여, 기존 Bxb1의 활성은 감지되지 않았으나, MINT 구조체와 활성 증가 Bxb1 변이체 및 아연 손가락 DNA 결합 도메인을 결합하여 K562 세포에서 AAVS1 위치에서 29%, TRAC 위치에서 35%의 효율을 달성하였다. 또한, 임상 가능성을 더욱 입증하기 위해 인간 T 세포에서 TRAC 위치에서 29%의 GFP 통합 효율을 달성하였다. 의사과학자 관점: 본 연구는 신약개발에서 유전자 편집 기술의 혁신적인 접근을 제시하며, 표적 치료 및 플랫폼 개발에 중요한 함의를 가진다.</div>
+      <div class="core"><b>핵심 요약</b><br>본 연구에서는 세린 인테그레이스를 특정 유전체 위치에 정밀하게 통합하기 위한 모듈형 인테그레이스 시스템(MINT)을 개발하였다. MINT 시스템을 통해 AAVS1 및 TRAC 유전자 좌위에서 각각 29% 및 35%의 효율로 DNA 통합을 달성하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>세린 인테그레이스는 큰 DNA 구조를 원하는 염색체 위치에 정밀하게 통합할 수 있지만, 자연적인 표적 위치가 수용체 유전체에 먼저 설치되어야 한다. 본 연구에서는 구조 모델링, 단일 라운드 지향 진화 및 인간 세포에서의 스크리닝을 통해 Bxb1의 특이성을 재타겟팅하는 MINT 시스템을 개발하였다. MINT 시스템을 통해 Bxb1을 인간 AAVS1 및 TRAC 좌위에 재타겟팅하여, 기존 Bxb1의 활성은 감지되지 않는 위치에서도 치료적 잠재력을 입증하였다. MINT 구조체와 Bxb1 변이체 및 아연 손가락 DNA 결합 도메인을 결합하여 K562 세포에서 AAVS1 좌위에서 29%, TRAC 좌위에서 35%의 효율을 달성하였다. 또한, 인간 T 세포에서 TRAC 좌위에 대해 29%의 GFP 통합 효율을 달성하여 임상적 잠재력을 추가로 입증하였다. 의사과학자 관점: 이 연구는 신약개발에 있어 표적 유전자 편집의 새로운 플랫폼을 제공한다.</div>
       <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42374116/" target="_blank">PubMed</a><a href="https://doi.org/10.1093/bioinformatics/btz921" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
@@ -188,44 +203,13 @@
       <div>
         <div class="title">Experiment-guided AlphaFold3 resolves measurement-consistent protein ensembles.</div>
         <div class="authors">Maddipatla A, Sellam Bojan N, Bojan M et al. · Nature biotechnology 2026</div>
-        <div class="tags"><span class="tag">단백질 구조</span><span class="tag">예측 모델</span><span class="tag type">신약개발</span></div>
+        <div class="tags"><span class="tag">단백질구조</span><span class="tag">신약개발</span><span class="tag type">의사과학</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>AlphaFold3는 단일 지배적 구조로 수렴하는 경향이 있지만, 실험 데이터를 통해 다수의 단백질 구조를 예측할 수 있는 방법을 제시한다. 이 방법은 NMR, X선 결정학, 크라이오-EM 데이터를 통합하여 실험과 일치하는 구조적 앙상블을 생성한다.</div>
-      <div class="detail"><h4>상세 요약</h4>단백질 구조 예측의 정확성을 높이기 위해 AlphaFold3의 예측을 실험 데이터에 맞추는 방법을 개발하였다. NMR, X선 결정학, 크라이오-EM 데이터를 활용하여 동적 정보를 포함한 구조적 앙상블을 생성하였으며, 이 앙상블은 실험 결과와 잘 일치하고 거리 제약 위반이 적었다. 이 방법론은 실험적으로 인식 가능한 예측 모델을 통해 여러 모달리티에서 측정과 일치하는 구조적 앙상블을 생성할 수 있는 가능성을 열어준다. 의사과학자 관점: 신약개발에 있어 이러한 접근법은 표적 단백질의 동적 특성을 이해하는 데 중요한 역할을 할 수 있다.</div>
+      <div class="core"><b>핵심 요약</b><br>AlphaFold3는 단일 지배적 구조로 수렴하는 경향이 있지만, 실험 데이터를 활용하여 다양한 단백질 구조의 집합체를 예측할 수 있다. 본 연구에서는 NMR, X선 결정학, 저온 전자 현미경 데이터를 통합하여 실험과 일치하는 구조적 집합체를 생성하는 방법론을 제시한다.</div>
+      <div class="detail"><h4>상세 요약</h4>단백질 구조 예측의 정확성을 높이기 위해 AlphaFold3의 예측을 실험 데이터에 맞추는 방법을 개발하였다. NMR, X선 결정학, 저온 전자 현미경 데이터와 동적 정보를 포함하여, 실험과 일치하는 구조적 집합체를 생성하였다. 이 방법론은 전통적인 NMR 구조보다 거리 제약 위반이 적고, 실험에서 발견된 대체 구조를 모델링할 수 있다. 이는 실험적으로 인식된 예측 모델을 통해 여러 모달리티에서 측정과 일치하는 구조적 집합체를 생성할 수 있는 가능성을 열어준다. 의사과학자 관점: 신약개발에 있어 실험 기반의 구조 예측은 표적 발굴과 플랫폼 개발에 중요한 기여를 할 수 있다.</div>
       <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42374114/" target="_blank">PubMed</a><a href="https://doi.org/10.1107/S2059798323003595" target="_blank">DOI ↗</a></div>
-    </div></div>
-  </div>
-  <div class="card">
-    <div class="head" onclick="this.parentNode.classList.toggle('open')">
-      <span class="tri">▶</span>
-      <div>
-        <div class="title">Spatially resolved profiling of extracellular vesicles in tissues with Spatial-EV-seq.</div>
-        <div class="authors">Wen Q, Na X, Lu Y et al. · Nature biotechnology 2026</div>
-        <div class="tags"><span class="tag">신약개발</span><span class="tag">바이오마커</span><span class="tag type">의사과학</span></div>
-      </div>
-    </div>
-    <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>Spatial-EV-seq는 세포 외 소포(EV)의 공간적 프로파일링을 통해 EV와 세포 간의 복잡한 상호작용을 분석하는 혁신적인 방법이다. 이 연구에서는 유방암 마우스 모델에서 PDL1+ EV가 풍부한 지역이 CD8+ T 세포 기능을 저하시켜 면역 특권 영역을 형성하는 것을 발견하였다.</div>
-      <div class="detail"><h4>상세 요약</h4>세포 외 소포(EV)는 생리적 항상성과 병리적 진행을 모니터링하는 유망한 바이오마커로 부각되고 있다. 그러나 기존 분석 방법은 EV의 공간 정보를 보존하는 데 한계가 있다. 본 연구에서는 Spatial-EV-seq라는 방법을 제시하며, 이는 항체 엔지니어링 캡처 인터페이스를 사용하여 EV의 공간 분포를 보존하고, EV 표면 결합 아프타머를 통한 롤링 서클 증폭으로 개별 EV의 형광 이미징 및 분자 프로파일링을 가능하게 한다. 이 방법은 초고감도 EV 프로파일링, 분자 하위 유형화 및 고해상도 공간 매핑을 통합하여 위치 특정 EV-세포 통신 네트워크를 해결한다. 연구 결과, PDL1+ EV가 풍부한 지역이 CD8+ T 세포 기능을 저하시켜 면역 특권 영역을 형성하고, PDL1+ EV가 결핍된 지역은 면역 능력을 보존하며 치료 민감성을 유지하는 것을 발견하였다. Spatial-EV-seq는 EV 매개 메커니즘에 대한 통찰을 제공하고 정밀 진단 및 치료의 새로운 길을 열어준다. 의사과학자 관점: 이 연구는 신약개발에서 EV의 역할을 이해하고, 표적 치료의 가능성을 제시한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42362724/" target="_blank">PubMed</a><a href="https://doi.org/10.1089/omi.2011.0118" target="_blank">DOI ↗</a></div>
-    </div></div>
-  </div><section id="new-england-journal-of-medicine" class="jrnl"><span class="tick"></span><h2>New England Journal of Medicine</h2><span class="count">1편</span></section>
-
-  <div class="card">
-    <div class="head" onclick="this.parentNode.classList.toggle('open')">
-      <span class="tri">▶</span>
-      <div>
-        <div class="title">Phase 3 Trial of Oral Infigratinib in Children with Achondroplasia.</div>
-        <div class="authors">Savarirayan R, Hoover-Fong J, Irving M et al. · The New England journal of medicine 2026</div>
-        <div class="tags"><span class="tag">신약개발</span><span class="tag">의사과학</span><span class="tag type">임상시험</span></div>
-      </div>
-    </div>
-    <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>52주 동안 매일 복용한 경구용 인피그라티닙이 성장이 저해된 아콘드로플라시아 아동에서 위약 대비 연간 신장 속도를 1.74cm 증가시켰습니다(P&lt;0.001). 이는 인피그라티닙이 아콘드로플라시아 치료에 효과적임을 시사합니다.</div>
-      <div class="detail"><h4>상세 요약</h4>아콘드로플라시아는 FGFR3 유전자 변이에 의해 발생하는 유전적 골격 질환입니다. 본 연구는 3세에서 17세 아동을 대상으로 한 3상 다기관 이중 맹검 위약 대조 시험으로, 114명의 환자가 인피그라티닙(0.25mg/kg) 또는 위약을 52주 동안 매일 복용하도록 무작위 배정되었습니다. 주요 결과로, 인피그라티닙 그룹에서 연간 신장 속도가 1.74cm 증가하였고(P&lt;0.001), 신장 z 점수도 유의미하게 증가했습니다. 인피그라티닙과 위약 그룹 모두에서 부작용이 발생했으나, 심각한 부작용은 드물었습니다. 결론적으로, 인피그라티닙은 아콘드로플라시아 아동의 성장 개선에 효과적입니다. 의사과학자 관점: 인피그라티닙은 아콘드로플라시아의 표적 치료제로서 신약개발에 중요한 의미를 갖습니다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42370681/" target="_blank">PubMed</a><a href="https://doi.org/10.1056/NEJMoa2604565" target="_blank">DOI ↗</a></div>
     </div></div>
   </div><section id="science-translational-medicine" class="jrnl"><span class="tick"></span><h2>Science Translational Medicine</h2><span class="count">4편</span></section>
 
@@ -233,60 +217,60 @@
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">IgA is necessary and sufficient to prevent norovirus infection in mice.</div>
-        <div class="authors">Ökten AB, Filler RB, Kung JL et al. · Science translational medicine 2026</div>
-        <div class="tags"><span class="tag">면역학</span><span class="tag">신약개발</span><span class="tag type">바이러스</span></div>
+        <div class="title">CAR T cell therapy selectively depletes disease-driving mutant calreticulin cells in xenotransplants and human organoid models of myelofibrosis.</div>
+        <div class="authors">Rampotas A, Wong ZC, Gannon I et al. · Science translational medicine 2026</div>
+        <div class="tags"><span class="tag">면역요법</span><span class="tag">혈액암</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>이 연구는 장내 면역글로불린 A(IgA)가 쥐에서 노로바이러스 감염을 예방하는 데 필수적이며 충분하다는 것을 보여준다. IgA 기반 치료법이 인간 노로바이러스에 대한 새로운 치료 접근법으로 제안된다.</div>
-      <div class="detail"><h4>상세 요약</h4>노로바이러스는 바이러스성 위장염의 주요 원인으로, 효과적인 백신과 치료법이 부족하다. 본 연구에서는 쥐 모델을 사용하여 IgA가 감염 예방에 필수적이고 충분하다는 것을 발견했다. CD8+ T 세포는 필요하지 않았다. 장내 IgA 생산은 최소 4주간의 장 감염이 필요하며, 이는 인간 노로바이러스 RNA 제거의 동력학과 일치한다. 전신 백신 접종은 높은 중화 혈청 IgG 수치를 유도하지만 장내 노로바이러스 감염을 예방하지 못했다. 반면, mRNA 지질 나노입자를 통한 이량체 항노로바이러스 IgA의 예방적 전달은 멸균 면역을 부여했다. 이 연구는 노로바이러스 보호에서 점막 IgA의 중요한 역할을 정의하고 IgA 기반 치료법을 인간 노로바이러스에 대한 치료 접근법으로 제안한다. 의사과학자 관점: IgA 기반 치료법은 신약개발에 있어 새로운 표적 및 플랫폼으로 활용될 수 있다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42341085/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.aeb4878" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>CAR T 세포 치료가 질병을 유발하는 변이 칼레티큘린(mutCALR) 세포를 선택적으로 제거하여, 건강한 줄기 세포에는 영향을 미치지 않으면서 생존율을 개선하는 효과를 보였다.</div>
+      <div class="detail"><h4>상세 요약</h4>림프계 악성 종양에 대한 표적 면역 요법의 성공에도 불구하고, 골수 신생물에서는 적절한 표적의 부족과 면역적으로 적대적인 종양 미세환경(TME)으로 인해 제한적이다. 변이 칼레티큘린에 의해 유도되는 골수 증식성 신생물(MPNs)을 대상으로 한 CAR T 세포 치료가 in vitro 및 in vivo에서 mutCALR+ 세포를 선택적으로 제거하고, 인간 &#x27;키메로이드&#x27; 모델에서도 효과를 유지함을 보여주었다. 이 연구는 mutCALR 기반 악성 종양을 제거할 수 있는 치료 전략을 제시하며, 혈액암 표적 면역 요법을 평가하는 혁신적인 방법을 강조한다. 의사과학자 관점: 이 연구는 신약개발에 있어 변이 표적을 활용한 면역 요법의 가능성을 제시한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42384776/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.adz3553" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Human donor liver viability evaluation with polarization-sensitive optical coherence tomography.</div>
-        <div class="authors">Yan F, Zhang Q, Mutembei BM et al. · Science translational medicine 2026</div>
-        <div class="tags"><span class="tag">의료기술</span><span class="tag">간이식</span><span class="tag type">비침습적 평가</span></div>
+        <div class="title">Bioresponsive microneedle stent provides anastomosis and postoperative adjuvant therapy in preclinical resectable intestinal diseases.</div>
+        <div class="authors">Zhou R, Cen D, Chen M et al. · Science translational medicine 2026</div>
+        <div class="tags"><span class="tag">의료기기</span><span class="tag">약물전달</span><span class="tag type">장질환</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구에서는 편광 감지 광간섭 단층촬영(PS-OCT)을 이용하여 기증자 간의 생존 가능성을 비침습적으로 평가하는 방법을 제안하였다. PS-OCT는 간의 여러 매개변수를 정량화하여 기존 병리학적 평가와 80% 이상의 상관관계를 보였으며, 이는 간 이식의 성공률을 높이는 데 기여할 수 있다.</div>
-      <div class="detail"><h4>상세 요약</h4>인간 간 이식은 기증 가능한 간의 부족으로 제한되고 있으며, 이에 따라 마진 간을 활용한 기증자 풀 확대가 필요하다. 기존의 침습적 생검 기반 평가 방법은 한계가 있어 비침습적이고 포괄적인 평가 기술이 요구된다. 본 연구에서는 PS-OCT를 통해 기증자 간의 표면 전반에 걸쳐 다중 매개변수 생존 가능성 평가를 수행하였고, 결과는 조직병리학적 평가와 교차 검증되었다. 기계 학습 및 텍스처 분석을 통해 PS-OCT 측정값과 전통적인 병리학적 평가 간의 상관관계를 분석한 결과, 80% 이상의 상관관계를 발견하였다. PS-OCT 이미징 결과는 정상온도 기계 관류 중 기증자 간의 기능적 성능 및 임상 간 이식 결과와 강한 상관관계를 나타냈다. PS-OCT는 기증자 간의 생존 가능성을 비침습적으로 평가할 수 있는 강력한 접근법을 제공하며, 이는 고위험 간의 폐기율을 감소시켜 기증자 풀을 확대하고 부적합한 간의 이식을 줄이는 데 기여할 수 있다. 의사과학자 관점: PS-OCT는 신약개발 및 간 이식의 표적 및 플랫폼 개발에 중요한 의미를 가진다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42341084/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.adv7124" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>본 연구에서는 재절제 가능한 장 질환의 수술 후 치유 및 약물 전달을 위한 마이크로니들 스텐트(MAS)를 소개합니다. MAS는 생분해성 폴리글리콜산 스텐트와 자극 반응성 폴리프로드 약물 패치를 통합하여 장 누출 방지 및 약물의 현장 방출을 가능하게 합니다. 이 접근법은 기존 방법에 비해 장 누관 수술 및 수술 후 치료에서 혁신적인 가능성을 제시합니다.</div>
+      <div class="detail"><h4>상세 요약</h4>재절제 가능한 장 질환의 성공적인 치료는 고급 장 누관 수술 기술과 효과적인 수술 후 관리에 달려 있습니다. 그러나 기존의 수술 후 보조 치료는 수술 후 전신 약물 투여로 제한되어 있어 합병증과 재발 가능성이 높습니다. 본 연구에서는 MAS를 통해 수술 후 장 치유와 국소 약물 전달을 가능하게 하였습니다. MAS는 생분해성 폴리글리콜산 스텐트와 자극 반응성 폴리프로드 마이크로니들 패치를 통합하여 강력한 기계적 특성과 장 누출 방지를 제공합니다. MAS는 장 절제 후 누관 부위에 이식되어 점막층을 관통하고, 염증 반응에 따라 항염증 약물을 방출하여 국소 염증을 완화하고 누관 치유를 촉진합니다. 세포 독성 및 생체 적합성 시험을 통해 MAS의 안전성을 확인하였고, ex vivo 환자 샘플을 통해 약물 방출 효능을 입증하였습니다. 생체 내 실험에서는 마우스 방사선 대장염 모델과 미니피그 허혈성 염증 손상 모델에서 MAS의 치료 효과와 안전성을 검증하였습니다. MAS는 다양한 치료제 전달 플랫폼으로서의 가능성을 보여주며, 복잡한 장 질환 치료에 응용될 수 있습니다. 기존 방법에 비해 MAS는 장 누관 수술 및 수술 후 보조 치료에서 봉합 없는 접근법을 제공하여 재절제 가능한 다양한 장 질환 치료에 대한 잠재력을 지니고 있습니다. 의사과학자 관점: MAS는 신약개발에 있어 장기적 치료 전략을 위한 혁신적인 플랫폼으로 작용할 수 있습니다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42384775/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.adx4225" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title"></div>
-        <div class="authors">Galli RA, Vonk LA, Baelde RJ et al. · Science translational medicine 2026</div>
-        <div class="tags"><span class="tag">신경근육질환</span><span class="tag">의사과학</span><span class="tag type">신약개발</span></div>
+        <div class="title">Alzheimer&#x27;s disease proteome-wide association study implicates adaptive immunity and identifies risk genes LILRB1 and SIRPA.</div>
+        <div class="authors">Walker KA, Blew C, Duggan MR et al. · Science translational medicine 2026</div>
+        <div class="tags"><span class="tag">신경과학</span><span class="tag">단백질체학</span><span class="tag type">의사과학</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 Kbtbd13:p.Arg408Cys 변이를 가진 마우스 모델을 통해 신경근육 질환인 NEM6의 병리학적 기전을 규명하고, Kbtbd13의 단일 치료가 질병 진행을 예방하거나 회복시킬 수 있음을 보여주었다.</div>
-      <div class="detail"><h4>상세 요약</h4>NEM6은 KBTBD13 유전자의 병원성 변이에 의해 발생하는 드문 신경근육 질환으로, 환자들은 근육 약화와 피로를 경험하며, 현재 특정 치료법이 없다. 본 연구에서는 Kbtbd13:p.Arg408Cys 변이를 가진 마우스 모델을 사용하여 근육 수축력, 단일 근섬유 분석, 초고해상도 현미경 및 X선 회절을 통해 질병의 분자적 변화를 연구하였다. 이 모델은 인간 NEM6의 병리학적 특징을 잘 재현하였으며, Kbtbd13의 발현 감소가 질병의 발병을 예방하거나 회복시키는 가능성을 제시하였다. 의사과학자 관점: Kbtbd13의 타겟 치료는 NEM6 환자에게 유망한 치료 전략이 될 수 있다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42341083/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.adx2116" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>알츠하이머병(AD) 단백질체 전반의 연관 연구를 통해 면역 반응과 관련된 유전자 LILRB1과 SIRPA를 확인하였다. 유럽계 미국인 샘플에서 18개의 유전자가 AD와의 인과관계를 나타내었으며, 이 중 4개 단백질은 이전 AD 연구에서 발견되지 않았다.</div>
+      <div class="detail"><h4>상세 요약</h4>플라스마 단백질 양적 형질좌위(pQTL) 데이터를 활용하여 AD의 위험 유전자를 식별하기 위한 연구를 수행하였다. 아프리카계 미국인 샘플에서는 APOE와 여러 제안 유전자를 확인하였고, 유럽계 미국인 샘플에서는 18개의 유전자가 AD와의 인과관계를 나타냈다. 이들 유전자 중 13개는 추가적인 분석을 통해 지지받았으며, LILRB1과 SIRPA는 AD와의 강한 기계적 연관성을 보였다. 이러한 결과는 AD의 병인론에 대한 통찰을 제공하고, 말초 순환에서 AD 치료 표적의 우선순위를 정하는 데 기여할 수 있다. 의사과학자 관점: 신약개발에 있어 면역 관련 단백질을 표적으로 하는 접근이 필요하다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42384774/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.adx4852" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">AI-CURA, an automated LLM workflow for high-accuracy genetic variant classification.</div>
-        <div class="authors">Ma W, Fong G, Lai J et al. · Science translational medicine 2026</div>
-        <div class="tags"><span class="tag">의료AI</span><span class="tag">유전학</span><span class="tag type">신약개발</span></div>
+        <div class="title">KSHV-infected endothelial cells expand and up-regulate angiogenic pathways and CXCR4 in patient-derived Kaposi sarcoma models.</div>
+        <div class="authors">Li X, Ohler ZW, Day A et al. · Science translational medicine 2026</div>
+        <div class="tags"><span class="tag">의사과학</span><span class="tag">신약개발</span><span class="tag type">모델연구</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>AI-CURA는 유전 변이 분류를 거의 완전 자동화하는 프레임워크로, ACMG 및 AMP 가이드라인에 따라 높은 민감도와 100% 특이성을 달성하였다. 이 연구는 LLM을 활용하여 유전 질환 진단의 효율성을 크게 향상시킬 수 있음을 보여준다.</div>
-      <div class="detail"><h4>상세 요약</h4>최근 LLM의 발전은 의료 분야에서의 활용 가능성을 높이고 있으며, 특히 희귀 질환 진단에 대한 연구가 부족하다. 본 연구에서는 AI-CURA라는 프레임워크를 개발하여 유전 변이 분류를 자동화하였다. 이 프레임워크는 비문헌 기반 기준에 대한 증거 평가를 표준 생물정보학 도구를 통해 자동화하고, 문헌 기반 증거에 대한 LLM 지원 평가를 통합하였다. DeepSeek-R1과 o3-mini-high 두 가지 LLM을 테스트한 결과, DeepSeek-R1이 ACMG 규칙 해석에서 높은 민감도와 100% 특이성을 기록하였다. ClinGen 전문가가 큐레이션한 150개의 변이에 대한 추가 테스트에서도 DeepSeek-R1은 인간 큐레이터와 높은 일치를 보였다. 마지막으로, AI-CURA는 상충된 해석을 가진 150개의 ClinVar 변이에 대한 재분류에도 사용될 수 있음을 보여주었다. 의사과학자 관점: AI-CURA는 유전 질환 진단 및 변이 재분류에 있어 신약 개발에 기여할 수 있는 자동화된 분류 프레임워크를 제공한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42341082/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.adz4172" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>이 연구는 KSHV 감염된 내피 세포가 환자 유래 Kaposi 육종 모델에서 혈관 생성 경로와 CXCR4를 증가시킨다는 것을 보여준다. 28개의 PDX 중 27개에서 KS 종양이 유지되었으며, 감염된 세포에서 CXCR4의 발현이 증가했다.</div>
+      <div class="detail"><h4>상세 요약</h4>Kaposi 육종(KS)은 KSHV 감염된 방추 세포에 의해 유도된 비정상적인 혈관 생성으로 정의된다. KS 연구는 종양 세포의 배양 시 KSHV 감염이 빠르게 소실되는 문제로 어려움을 겪고 있다. 본 연구에서는 면역 결핍 마우스에 KS 생검을 이식하여 KS 환자 유래 이종 이식 모델(PDXs)을 확립하였다. PDXs의 27개에서 KS 종양이 실험 종료 시점까지 유지되었으며, KSHV 지연 관련 핵 항원 양성(LANA+) 내피 세포는 입력 생검에 비해 Ki-67 염색이 더 높고 밀도가 증가하였다. PDX의 공간 분석 결과, 잠복 및 용해 유전자 클래스에서 바이러스 전사체의 발현이 증가하고 혈관 생성 및 내피 발달 경로가 풍부해졌다. 감염된 종양 세포에서 CXCR4의 발현이 비감염 세포보다 높았으며, 이는 바이러스 감염에 대한 직접적인 반응을 시사한다. PDX에서 유래한 섬유아세포 특성을 가진 세포는 KSHV 감염에 허용적이었고, 한 계통은 CXCL12를 생성하여 KSHV 관련 질환 환자의 혈청에서도 증가된 것으로 나타났다. 이러한 결과는 여러 기증자로부터 KSHV 감염된 내피 세포의 재현 가능한 확장을 보여주며, KS의 분자 및 병리학적 특징을 유사하게 재현하여 KS PDXs가 병원성 메커니즘 및 후보 치료제를 발견하기 위한 전임상 모델로서의 가능성을 지지한다. 의사과학자 관점: KS PDXs는 신약 개발에 있어 중요한 플랫폼이 될 수 있다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42384773/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/scitranslmed.adw9462" target="_blank">DOI ↗</a></div>
     </div></div>
   </div><section id="cell" class="jrnl"><span class="tick"></span><h2>Cell</h2><span class="count">4편</span></section>
 
@@ -294,60 +278,76 @@
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Whole-cell particle-based digital twin simulations from 4D lattice light-sheet microscopy data.</div>
-        <div class="authors">Arkfeld E, Wang Z, Hakozaki H et al. · Cell 2026</div>
-        <div class="tags"><span class="tag">세포생물학</span><span class="tag">모델링</span><span class="tag type">신약개발</span></div>
+        <div class="title">Co-option of lysosomal machinery shapes the evolution of the intracellular photosymbiosis supporting coral reefs.</div>
+        <div class="authors">Maruyama S, Henderson CF, Swinhoe N et al. · Cell 2026</div>
+        <div class="tags"><span class="tag">생물학</span><span class="tag">세포생물학</span><span class="tag type">공생</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 4D 격자 광시트 현미경 데이터를 활용하여 세포 내 소기관 동역학을 모델링하는 전체 세포 디지털 트윈 프레임워크를 제안한다. 이 프레임워크는 미토콘드리아 네트워크와 미세소관 네트워크의 동역학을 재현하며, 미세소관의 구조적 특성이 미토콘드리아 클러스터링에 미치는 영향을 밝혀낸다.</div>
-      <div class="detail"><h4>상세 요약</h4>본 연구는 4D 격자 광시트 현미경을 통해 얻은 형광 현미경 데이터를 바탕으로, 미토콘드리아 네트워크, 미세소관 네트워크, 운동 단백질, 세포막 및 핵을 포함하는 공간적으로 해상도가 높은 디지털 트윈을 구축하였다. 시뮬레이션은 미토콘드리아의 융합/분열 리모델링, 확산 및 미세소관을 따라 이동하는 운동 단백질에 의한 능동 수송을 포함하며, 두 가지 미세소관 변형 조건에서 실험적 경향을 재현하였다. 또한, 스트레스 모방을 통해 미세소관 주변의 미토콘드리아 클러스터링을 예측하였으며, 미세소관의 구조적 특성이 이 재조직화의 구조적 게이트 역할을 한다는 것을 밝혀냈다. 이 디지털 트윈 프레임워크는 세포 내 동역학 및 교란 효과를 해석 가능하고 생물학적으로 근거 있는 방식으로 조사하는 접근법을 제공한다. 의사과학자 관점: 신약개발에 있어 세포 내 동역학의 이해는 표적 및 플랫폼 개발에 중요한 함의를 가진다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42379169/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.010" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>해양 동물인 산호와 해파리는 공생체인 조류를 수용하는 세포 소기관인 심비오좀을 반복적으로 진화시켰으며, 이는 리소좀 단백질의 광범위한 공동 활용을 통해 이루어진다. 연구 결과, SLC26A11이라는 리소좀 수송체가 공생에 필수적임을 확인하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>내부 공생은 생명체의 새로운 세포 소기관 진화를 촉진해왔다. 본 연구에서는 해양 애벌레인 Aiptasia를 사용하여 심비오좀의 고품질 단백질체를 생성하고, 공생 중 단백질 이동 메커니즘과 교환되는 생체 분자의 유형을 밝혀냈다. 리소좀 단백질의 농축, 리소좀 융합의 시각화, 리소좀 유전자의 발현 억제 후 공생 감소가 관찰되었으며, SLC26A11이라는 심비오좀의 중탄산염/황산염 수송체가 Aiptasia와 산호의 공생에 필수적임을 CRISPR/Cas9 변형을 통해 입증하였다. 이러한 발견은 산호와 해파리가 리소좀 단백질을 반복적으로 활용하여 탄소를 농축하고 대사물을 이동시켜 광합성 공생을 지원하는 간단한 경로를 제공함을 보여준다. 의사과학자 관점: 이 연구는 신약개발에 있어 표적 단백질의 공동 활용 가능성을 시사한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42385704/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.015" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Systematic discovery of pathogen effector functions across human pathogens and pathways.</div>
-        <div class="authors">Pachano T, Leng H, Dugied G et al. · Cell 2026</div>
-        <div class="tags"><span class="tag">병원체 연구</span><span class="tag">효과 단백질</span><span class="tag type">기능 유전체</span></div>
+        <div class="title">LEF1 and niche factors determine T cell stemness across chronic diseases.</div>
+        <div class="authors">Miakicheva S, Hawley KM, Zumbo P et al. · Cell 2026</div>
+        <div class="tags"><span class="tag">면역학</span><span class="tag">세포생물학</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>이 연구는 3,835개의 병원체 효과 단백질 개방 읽기 프레임(eORF)을 포함하는 기능 유전체 플랫폼을 개발하여, 다양한 병원체가 숙주 세포 생물학을 이용하는 방식을 체계적으로 발견하였다. 고속 바코드 스크리닝을 통해 수백 개의 미특성화 eORF의 새로운 경로 조절 기능을 밝혀내고, 특정 ORF가 인코딩하는 독특한 경로별 기능을 규명하였다.</div>
-      <div class="detail"><h4>상세 요약</h4>병원체는 효과 단백질을 통해 숙주 세포 생물학을 착취하며, 대부분의 효과 단백질 개방 읽기 프레임(ORF)은 빠르게 진화하고 기능 주석이 부족하다. 본 연구에서는 다양한 바이러스, 박테리아, 기생충에서 유래한 3,835개의 효과 단백질 ORF를 포함하는 eORFeome 플랫폼을 개발하였다. NF-κB, 세포자멸사, p53, cGAS-STING, MHC class I 경로에 대한 고속 바코드 스크리닝을 통해 수백 개의 미특성화 eORF의 새로운 경로 조절 기능과 알려진 효과 단백질의 예상치 못한 활동, 단일 ORF가 인코딩하는 경로별 기능을 발견하였다. 이 연구를 통해 HHV6A U14가 p53 길항제, HHV7 U21이 이중 기능 STING 길항제 및 MHC-I 항원 전시 억제제로 작용하며, 아데노바이러스 13.6K/i-leader 단백질이 MHC-I 전시를 억제하는 새로운 TAP 억제제로 작용함을 확인하였다. 이러한 결과는 체계적인 효과 단백질 주석을 위한 일반적인 프레임워크를 확립하고, 왕국 간 숙주-병원체 상호작용의 새로운 메커니즘을 밝혀내며, 병원체 효과 단백질이 인간 세포 경로를 재구성하고 탐색하는 다재다능한 도구로서의 가능성을 강조한다. 의사과학자 관점: 이 연구는 신약 개발에 있어 병원체 효과 단백질을 활용한 새로운 표적 발굴의 가능성을 제시한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42379168/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.017" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>LEF1과 주변 환경 인자가 만성 질환에서 T 세포의 줄기세포성을 결정짓는 주요 요소임을 발견하였다. LEF1+ TCF1hi T 세포는 자가 재생 능력을 가진 진정한 T 세포 줄기세포 풀을 형성하며, 이는 만성 질환의 면역 반응 유지에 중요한 역할을 한다.</div>
+      <div class="detail"><h4>상세 요약</h4>만성 자가면역 및 감염 상황에서 T 세포의 줄기세포성은 TCF1과 LEF1의 상호작용에 의해 조절된다. 연구에서는 자가면역 제1형 당뇨병 및 만성 감염의 전임상 모델을 사용하여, LEF1+ TCF1hi T 세포가 진정한 T 세포 줄기세포 풀을 정의하고, 이들이 TPRO 및 TDIFF로 분화함을 보여주었다. LEF1은 T 세포 줄기세포성에 필수적이며, 이들 세포는 배아 및 성체 줄기세포와 관련된 유전자 및 경로가 풍부한 독특한 에피제네틱 프로그램을 공유한다. 주변 환경 신호와 이동이 줄기세포 운명을 조절하며, 통합체나 Notch 신호를 표적하면 T 세포 줄기세포성이 손상되고 질병이 예방된다. 의사과학자 관점: LEF1과 주변 인자는 신약개발에서 T 세포 줄기세포성을 조절하는 중요한 표적이 될 수 있다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42385703/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.022" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Structural basis for host membrane binding and remodeling by invading malaria parasites.</div>
-        <div class="authors">Haile MT, Kaxiras DA, Zhen J et al. · Cell 2026</div>
-        <div class="tags"><span class="tag">생명과학</span><span class="tag">의학</span><span class="tag type">신약개발</span></div>
+        <div class="title">Recurrent patterns of TOP1-mediated neuronal genomic damage shared by major neurodegenerative disorders.</div>
+        <div class="authors">Zhou Z, Luquette LJ, Dong G et al. · Cell 2026</div>
+        <div class="tags"><span class="tag">신경퇴행성질환</span><span class="tag">유전자변이</span><span class="tag type">의사과학</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>말라리아 기생충의 이동 접합부 구조를 규명하여, 적혈구 막에 결합하고 재구성하는 메커니즘을 밝혀냈다. PfAMA1과 PfRON 단백질들이 형성하는 복합체가 적혈구 막에 강하게 결합하며, 침투 억제 단백질 설계를 가능하게 하는 기초를 제공한다.</div>
-      <div class="detail"><h4>상세 요약</h4>말라리아 기생충의 적혈구 침투 과정에서 이동 접합부의 구조와 기능이 불분명했으나, 본 연구에서는 Plasmodium falciparum에서 직접 정제한 구조를 통해 sailboat 형태의 복합체를 규명하였다. PfRON2는 적혈구 막에 고정되며 PfAMA1과의 결합을 위한 외부 핸들을 제공하고, PfRON2/4/5는 적혈구 내부에서 큰 플랫폼을 형성하여 전기적으로 적혈구 막과 상호작용한다. 이 연구는 기생충 침투를 억제하는 소단백질 결합체의 합리적 설계를 가능하게 하여, 신약 개발에 기여할 수 있는 기초 자료를 제공한다. 의사과학자 관점: 기생충 침투 메커니즘 이해는 새로운 표적 기반 치료제 개발에 중요한 함의를 가진다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42379167/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.012" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>ALS, FTD, AD에서 TOP1 매개 유전자 손상이 공통적으로 나타나며, 이로 인해 신경세포의 유전자 불안정성이 증가한다. 469개의 신경세포 분석 결과, ALS의 22%, FTD의 76%, AD의 61%에서 특정 변이가 발견되었다. 이는 신경퇴행성 질환의 새로운 기전을 제시한다.</div>
+      <div class="detail"><h4>상세 요약</h4>ALS, FTD, AD는 신경퇴행성 질환으로, 신경세포 사멸의 기전이 불명확하다. 연구진은 C9ORF72 ALS, C9ORF72 FTD, AD 및 대조군의 469개 신경세포를 단일세포 전체 유전체 시퀀싱하여, 모든 질병에서 증가된 단일 염기 변이와 삽입/결실을 발견하였다. 변이 서명 분석을 통해 산화적 손상과 관련된 변이 서명이 확인되었고, ALS, FTD, AD 신경세포에서 각각 22%, 76%, 61%의 변이가 나타났다. RADAR 분석을 통해 TOP1-DNA 결합 복합체의 증가가 확인되었고, 이로 인해 TOP1 관련 변이와 유전자 불안정성이 TDP-43 및 타우 신경퇴행과 공통된 기전임을 제시하였다. 의사과학자 관점: 신약개발에 있어 TOP1을 표적으로 하는 접근이 필요하다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42385702/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.013" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Multiscale integration of tissue and chromatin context converts cell heterogeneity into stable intestinal patterning.</div>
-        <div class="authors">Schwayer C, Barbiero S, Brückner DB et al. · Cell 2026</div>
-        <div class="tags"><span class="tag">세포생물학</span><span class="tag">재생의학</span><span class="tag type">의사과학</span></div>
+        <div class="title">Four-dimensional molecular mapping from a spatial snapshot reveals the dynamics of hair follicle organogenesis.</div>
+        <div class="authors">Asami S, Yin C, Fan J et al. · Cell 2026</div>
+        <div class="tags"><span class="tag">생명과학</span><span class="tag">의사과학</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 세포 이질성이 장기 재생 과정에서 어떻게 안정적인 패턴으로 전환되는지를 규명하였다. YAP1의 이질성이 FOXA1을 통해 해석되며, 이는 세포의 운명을 이끌어내는 중요한 메커니즘으로 작용한다. 이 결과는 조직의 기계적 특성이 단일 세포의 능력에 영향을 미친다는 것을 보여준다.</div>
-      <div class="detail"><h4>상세 요약</h4>조직 재생은 새로운 패턴 형성을 요구하며, 이는 세포 이질성에 의해 촉진될 수 있다. 본 연구에서는 생체 내 마우스 장 재생 모델과 오르가노이드를 사용하여 YAP1의 이질성이 세포 계통 편향 크로마틴 접근성과 연결되어 있음을 발견하였다. FOXA1은 이러한 크로마틴 상태를 Delta-Notch 피드백과 연결하여 세포 운명을 결정짓는 역할을 한다. 이 회로는 운명의 이중 안정성을 생성하고 일시적인 YAP1 활동의 기억을 유지하여 조직이 손상 후 항상성으로 돌아갈 때 공간적 패턴을 유지한다. 따라서 본 연구는 조직 규모의 기계적 특성이 단일 세포의 능력을 조정하고, FOXA1 매개 이중 안정성을 통해 일시적인 이질성을 안정적이고 자가 조직화된 조직 구조로 변환하는 다중 규모 프레임워크를 확립하였다. 의사과학자 관점: 이 연구는 신약개발에 있어 세포 이질성을 활용한 표적 치료의 가능성을 제시한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42379166/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.009" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>본 연구는 3D DNase-Enhanced Expression Profiling(3DEEP) 기법을 통해 모낭 발생의 4차원 분자 지도를 구축하였다. 이를 통해 모낭의 발달 과정에서 줄기세포 구획의 층화, 새로운 세포 아형의 출현, 그리고 모관 형성으로 이어지는 구조적 변화를 관찰하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>장기 형성을 이해하기 위해서는 분자 정보를 3차원 공간과 발달 시간에 걸쳐 동시에 포착해야 한다. 이를 위해 우리는 조직 투명화 접근법인 3DEEP를 개발하여, 유전자 DNA를 제거하고 intact 조직에서 수백 마이크론 깊이까지 공간 전사체 프로파일링을 확장하였다. 이 방법을 신생아 생쥐 피부에 적용하여 수백 개의 발달 중인 모낭을 포착하였고, 분자적으로 추론된 발달 연령에 따라 모낭을 정렬함으로써 단일 공간 스냅샷을 4차원 분자 지도(3D + 시간)로 변환하였다. 이 지도는 줄기세포 구획의 층화, 모낭 내 새로운 세포 아형의 출현, 그리고 모관 형성으로 이어지는 구조적 변화의 발달 역학을 밝혀냈다. Foxn1 결핍 누드 생쥐를 비교 분석한 결과, 발달 역학의 전반적인 변화가 나타났으며, 이는 구조적 결함이 나타나기 전에 지연된 분자 진행, 조정 감소, 발달 불안정성 증가를 포함하였다. 이 연구는 깊은 조직 공간 전사체학이 장기 형성의 숨겨진 역학을 밝혀낼 수 있음을 보여준다. 의사과학자 관점: 신약개발에 있어 이러한 분자 지도는 표적 발견과 플랫폼 개발에 중요한 통찰을 제공할 수 있다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42385701/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.cell.2026.06.014" target="_blank">DOI ↗</a></div>
+    </div></div>
+  </div><section id="nature" class="jrnl"><span class="tick"></span><h2>Nature</h2><span class="count">1편</span></section>
+
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div>
+        <div class="title">Electrodeposited self-assembled molecules for perovskite photovoltaics.</div>
+        <div class="authors">Xiong Z, Luo X, Tang F et al. · Nature 2026</div>
+        <div class="tags"><span class="tag">태양전지</span><span class="tag">신소재</span><span class="tag type">전기화학</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>전극침착된 자기조립 분자(SAMs)는 페로브스카이트 태양전지의 성능과 안정성을 향상시키는 데 중요한 역할을 한다. 본 연구에서는 전극침착을 통해 SAM의 균일성과 고정 강도를 개선하여, 실험실 규모의 태양전지에서 26.8%의 전력 변환 효율을 달성하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>페로브스카이트 태양전지(PSCs)의 성능과 안정성을 높이기 위해 SAM의 탈착 방지 및 패시베이션 효과 강화가 필요하다. 전극침착된 SAM은 기존 용액 처리의 한계를 넘어 전도성 기판에서의 균일한 덮개와 강력한 고정을 제공한다. 본 연구에서는 전극침착을 통해 SAM의 분자 재배열과 재고정을 촉진하여 인듐 주석 산화물(ITO) 기판 위에 균일하고 조밀한 층을 형성하였다. 이 기반 SAM을 바탕으로 전기화학적 산화 결합을 통해 맞춤형 카바졸 포스포닉 SAM을 성장시켜, 실험실 규모의 태양전지에서 26.8%, 태양광 모듈(65 cm2)에서 21.3%의 전력 변환 효율을 달성하였다. 의사과학자 관점: 이 연구는 신약개발에 있어 새로운 플랫폼 기술의 가능성을 제시한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42393410/" target="_blank">PubMed</a><a href="https://doi.org/10.1038/s41586-026-10844-6" target="_blank">DOI ↗</a></div>
     </div></div>
   </div><section id="science" class="jrnl"><span class="tick"></span><h2>Science</h2><span class="count">4편</span></section>
 
@@ -355,92 +355,60 @@
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">A native sulfur deposit in Gale crater, Mars.</div>
-        <div class="authors">VanBommel SJ, Berger JA, King PL et al. · Science (New York, N.Y.) 2026</div>
-        <div class="tags"><span class="tag">행성과학</span><span class="tag">지질학</span><span class="tag type">우주탐사</span></div>
+        <div class="title">Membrane protein solubilization and structure determination using de novo-designed proteins.</div>
+        <div class="authors">Mihaljević L, Kim DE, Bandawane PD et al. · Science (New York, N.Y.) 2026</div>
+        <div class="tags"><span class="tag">막단백질</span><span class="tag">신약개발</span><span class="tag type">구조생물학</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>화성의 게일 분화구 내 Gediz Vallis에서 원주황석이 발견되었으며, 이는 고대 화성에서의 황 농축 경로를 나타낸다. 이 황은 마그마 증기로부터 유래하였고, 지하의 유체가 작용했음을 시사한다.</div>
-      <div class="detail"><h4>상세 요약</h4>화성의 암석은 황을 포함한 화합물을 포함하고 있으며, 이는 화성의 지질 진화 과정에서의 황 순환을 기록한다. 우리는 Curiosity 로버를 사용하여 Gediz Vallis의 밝은 색의 돌들로 이루어진 황 deposit을 조사하였다. 조사 결과, 이 돌들은 원주황으로 구성되어 있으며, Gediz Vallis의 바닥에 있는 구불구불한 협곡 내에서 제자리에서 형성된 것으로 보인다. 원주황의 존재는 고대 화성에서 부유하는 지하 유체가 작용했음을 나타내며, 이 황의 주요 출처는 마그마 증기로, 이는 근처의 지하 냉각층에서 응축되어 Gediz Vallis의 침식 과정 중에 방출되었을 것으로 제안된다. 의사과학자 관점: 이 연구는 신약개발에 있어 지질학적 과정과 화학적 경로의 이해가 중요함을 시사한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42365982/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.adu5501" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>본 연구는 심층 학습 기반의 디자인 접근법을 통해 고유 막 단백질을 용해시키고 구조 분석을 가능하게 하는 방법을 제시한다. WRAPs라는 새로운 단백질을 이용하여 막 단백질의 수용성과 열 안정성을 확보하였으며, 이를 통해 구조 결정이 가능함을 보여주었다.</div>
+      <div class="detail"><h4>상세 요약</h4>막 단백질에 대한 치료제 및 백신 개발은 그들의 광범위한 소수성 표면으로 인해 어려움을 겪고 있다. 본 연구에서는 WRAPs(물에 용해되는 RFdiffused amphipathic proteins)를 설계하여 원래의 단백질 서열과 구조를 유지하면서도 수용성을 높이는 방법을 제시하였다. WRAPs는 리피드와 상호작용하는 소수성 표면을 둘러싸 열 안정성과 수용성을 제공하며, 세제 없이도 작동한다. 우리는 단량체 및 다량체 베타-배럴 외막 단백질과 나선형 다중 통과 막 단백질에 대해 WRAPs를 설계하였다. 2.95 옹스트롬 해상도의 크라이오 전자 현미경 구조 분석을 통해 WRAPs가 용액에서 막 단백질의 구조 결정에 사용될 수 있음을 입증하였다. 또한, 매독 백신 개발을 위한 첫 단계로 Treponema pallidum 항원의 용해 가능한 버전을 생성하였다. 의사과학자 관점: 이 연구는 신약개발에 있어 막 단백질의 구조 분석을 용이하게 하는 플랫폼을 제공한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42391386/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.adr3817" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Lariat RNA debranching prevents harmful siRNA burst in plants.</div>
-        <div class="authors">Tang Q, Ding C, Zhang X et al. · Science (New York, N.Y.) 2026</div>
-        <div class="tags"><span class="tag">식물생물학</span><span class="tag">RNA 연구</span><span class="tag type">신약개발</span></div>
+        <div class="title">ILC2s regulate a fibroblast progenitor niche in the pancreas.</div>
+        <div class="authors">Yip T, Stockis J, Simpson C et al. · Science (New York, N.Y.) 2026</div>
+        <div class="tags"><span class="tag">면역학</span><span class="tag">세포생물학</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 lariat RNA의 탈지방화가 식물에서 유해한 siRNA의 폭발을 방지한다는 것을 밝혀냈다. DBR1 효소의 기능 장애는 면역 유전자를 표적으로 하는 siRNA의 생성을 촉진하여 식물 방어 반응을 방해한다.</div>
-      <div class="detail"><h4>상세 요약</h4>lariat RNA는 전사 후 스플라이싱 과정에서 형성되며, DBR1 효소에 의해 분해된다. DBR1의 기능 장애는 발달 정지를 초래하지만 그 메커니즘은 불명확했다. 본 연구에서는 lariat RNA의 탈지방화가 21- 및 22-뉴클레오타이드 lariat 유래 소형 간섭 RNA(lasiRNA)의 생성을 방지하여, 외래 siRNA의 폭발을 막고 발달 및 방어 반응을 보호한다는 것을 발견했다. lasiRNA 생합성은 RNA 의존성 RNA 중합효소와 Dicer 유사 단백질(DCL)에 의존하며, 병원체 감염 시 DBR1의 기능 장애로 인해 많은 lariat RNA가 DCL4 및 DCL2에 의해 탈취되어 siRNA로 가공되어 면역 유전자를 표적으로 하여 식물 방어 반응을 방해한다. 따라서 DBR1 매개 lariat RNA 제거는 식물에서 소형 RNA 기반 방어 시스템의 활성화를 방지하는 보호 메커니즘으로 작용한다. 의사과학자 관점: 이 연구는 신약개발에 있어 RNA 기반 치료제의 타겟 발굴 및 플랫폼 개발에 중요한 시사점을 제공한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42348705/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.aeb4938" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>ILC2 세포가 췌장에서 섬유아세포의 항상성을 조절하는 주요 역할을 한다. ILC2는 Pi16+Dpp4+Ly6c+ 유전자를 발현하는 섬유아세포와 함께 존재하며, 이들 섬유아세포의 확장을 조절하고 염증 동안 분화된 섬유아세포의 성장을 억제한다. 이 연구는 ILC2와 섬유아세포 간의 상호작용이 조직 항상성과 병리학을 조절하는 중요한 노드임을 보여준다.</div>
+      <div class="detail"><h4>상세 요약</h4>조직의 섬유아세포 발달과 밀도가 장기 건강과 질병에 영향을 미치지만, 섬유아세포의 위치 조절 메커니즘은 불명확하다. 본 연구에서는 ILC2 세포가 췌장에서 섬유아세포 항상성을 조절하는 핵심 요소임을 규명하였다. ILC2는 췌장의 외분비 조직 내에서 Pi16+Dpp4+Ly6c+ 유전자를 발현하는 섬유아세포와 함께 위치하며, 이들 섬유아세포의 확장을 조절하고 염증 상황에서 분화된 섬유아세포의 성장을 억제한다. 이 메커니즘은 손상 후 섬유아세포 수를 강화하고 염증의 임계값을 설정한다. ILC2와 Pi16+Dpp4+Ly6c+ 섬유아세포의 대화는 조직 항상성과 병리를 조절하는 중요한 조절 노드를 형성한다. 의사과학자 관점: 이 연구는 신약개발에서 섬유아세포 표적 및 치료 플랫폼의 가능성을 제시한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42391385/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.aea5113" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Diversification of angiosperm reproductive strategies predated the end-Cretaceous extinction.</div>
-        <div class="authors">Lee J, Contreras DL, Saulsbury JG et al. · Science (New York, N.Y.) 2026</div>
-        <div class="tags"><span class="tag">식물학</span><span class="tag">고생물학</span><span class="tag type">생태학</span></div>
+        <div class="title">Alternating atomic-dipole layers and switching dynamics in Al</div>
+        <div class="authors">Zheng Y, Bai R, Xin T et al. · Science (New York, N.Y.) 2026</div>
+        <div class="tags"><span class="tag">강유전체</span><span class="tag">전자재료</span><span class="tag type">기초연구</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 백악기 말 멸종 이전에 이미 다양한 식물의 생식 전략이 진화했음을 보여준다. 뉴멕시코의 Jose Creek Formation에서 발견된 80종 이상의 이식체 형태는 생식 투자와 전문화가 크게 증가했음을 나타낸다.</div>
-      <div class="detail"><h4>상세 요약</h4>백악기 말 생물 위기와 생태적 재구성에 대한 기존의 연구와 달리, 본 연구는 7460만 년 전의 열대 숲에서 발견된 다양한 이식체를 통해 생식 전략의 진화를 조사하였다. 80종의 이식체 형태가 발견되어, 이 식물군이 생식 투자와 형태적 전문화에서 상당한 발전을 이루었음을 보여준다. 이러한 결과는 백악기 식물들이 이미 다양한 분산 전략을 발전시켰음을 시사하며, 동물 매개 분산과 밀집한 식물 캐노피가 훨씬 이전에 형성되었음을 나타낸다. 의사과학자 관점: 신약개발에 있어 생물학적 다양성과 분산 전략의 이해는 새로운 치료법 개발에 중요한 함의를 가진다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42348704/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.adw9457" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>Wurtzite Al1-xScxN 강유전체는 뛰어난 분극성과 열적 안정성을 보여 전자 응용에 유망하다. 원자 치환이 스위칭 에너지 장벽을 낮추는 메커니즘을 조사하기 위해, 원자 규모의 주기적 변조를 발견하여 스위칭 동역학을 규명하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>Wurtzite Al1-xScxN 강유전체는 전자 응용에 매우 유망하지만, 원자 규모에서의 메커니즘에 대한 이해가 필요하다. 우리는 구형 수차 보정 투과 전자 현미경을 사용하여 분극 방향을 따라 양이온-음이온 간격의 주기적 변조를 밝혀냈다. 이 변조는 인접한 층 사이의 알루미늄과 스칸듐 원자의 화학적 배열에서 기인하며, 원자 배열의 비대칭성을 보여준다. 현장 이미징을 통해 비집합적이고 단계적인 분극 스위칭을 직접 관찰하였고, 중간 상태와 지역 간격 변동을 포착하였다. 이러한 쌍극자 층의 조성 불균일성은 스위칭 에너지 장벽을 감소시키는 여러 과도 상태를 생성한다. 우리의 발견은 원자 규모의 쌍극자 구조와 분극 스위칭 동역학을 연결하여 Wurtzite 강유전체의 합리적 설계를 가능하게 한다. 의사과학자 관점: 이 연구는 신약개발에 있어 새로운 표적 및 플랫폼 설계에 기여할 수 있다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42391384/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.aee9639" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">The enduring pursuit of science in America.</div>
-        <div class="authors">Shubin NH · Science (New York, N.Y.) 2026</div>
-        <div class="tags"><span class="tag">과학</span><span class="tag">정책</span><span class="tag type">의사과학</span></div>
+        <div class="title">Surface immune signaling unlocks NLR activation through mRNA alternative splicing.</div>
+        <div class="authors">Gao C, Meng X, Chen X et al. · Science (New York, N.Y.) 2026</div>
+        <div class="tags"><span class="tag">식물면역</span><span class="tag">유전자조절</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>미국에는 이념이나 이해관계 없이 복잡한 문제에 대한 명확한 이해를 제공하는 과학 전문가들이 모인 조직이 존재한다. 이 기관은 증거에 기반하여 활동하며, 신뢰성을 확보하기 위해 철저한 분석과 투명한 과정을 따른다. 현재 이 기관의 필요성이 그 어느 때보다도 절실하다.</div>
-      <div class="detail"><h4>상세 요약</h4>이 논문은 미국의 과학 기관이 어떻게 이념적 편향 없이 과학적 진리를 추구하는지를 설명한다. 이 기관은 복잡한 문제를 해결하기 위해 전문가들이 모여 증거 기반의 분석을 통해 신뢰를 구축하고 있다. 그러나 이러한 기관의 작업은 여러 도전에 직면해 있으며, 현재의 사회적 요구에 부응하기 위해 더욱 중요해지고 있다. 의사과학자 관점: 신약개발에 있어 과학적 접근이 필수적임을 강조한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42348702/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.aej8205" target="_blank">DOI ↗</a></div>
-    </div></div>
-  </div><section id="the-lancet" class="jrnl"><span class="tick"></span><h2>The Lancet</h2><span class="count">1편</span></section>
-
-  <div class="card">
-    <div class="head" onclick="this.parentNode.classList.toggle('open')">
-      <span class="tri">▶</span>
-      <div>
-        <div class="title">Safety and efficacy of mRNA vaccines: a mechanistic and public health perspective.</div>
-        <div class="authors">Blakney AK, Top KA, Cowling BJ et al. · Lancet (London, England) 2026</div>
-        <div class="tags"><span class="tag">백신</span><span class="tag">의학</span><span class="tag type">리뷰</span></div>
-      </div>
-    </div>
-    <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>mRNA 백신은 빠른 개발, 대량 생산, 강한 면역원성과 안전성을 결합한 혁신적인 백신 플랫폼이다. COVID-19 팬데믹 동안 전 세계적으로 수십억 회분이 접종되어 실제 평가가 이루어졌다. 이 리뷰에서는 mRNA 백신의 안전성과 효능을 다양한 관점에서 비판적으로 검토하였다.</div>
-      <div class="detail"><h4>상세 요약</h4>mRNA 백신은 세포질에서 일시적으로 발현되고 유전체 통합이 없으며 빠르게 제거되는 생물학적 기초를 가지고 있다. 우리는 백신 성분, 제조 품질 관리, 규제 기준에 대한 증거를 종합하고, 무작위 시험, 승인 후 감시 및 약물 안전성 시스템의 데이터를 분석하였다. 연령, 임신, 면역 저하 인구에 대한 실제 효과와 전파에 미치는 영향도 검토하였다. 마지막으로, 공공 인식과 백신 신뢰를 다루고 차세대 mRNA 백신의 전략을 논의하였다. 축적된 증거는 mRNA 백신이 안전하고 효과적이며 적응 가능한 플랫폼임을 확인하며, 향후 감염병 예방과 공공 건강 준비, 암 및 자가면역 치료에 지속적인 중요성을 가진다. 의사과학자 관점: mRNA 백신 플랫폼은 신약개발에 있어 새로운 표적 및 접근 방식을 제공할 수 있다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42379196/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/S0140-6736(26)00512-X" target="_blank">DOI ↗</a></div>
-    </div></div>
-  </div><section id="jama" class="jrnl"><span class="tick"></span><h2>JAMA</h2><span class="count">1편</span></section>
-
-  <div class="card">
-    <div class="head" onclick="this.parentNode.classList.toggle('open')">
-      <span class="tri">▶</span>
-      <div>
-        <div class="title">Neonatal Survival After Serial Amnioinfusions for Anhydramnios Due to Fetal Kidney Failure: The RAFT Clinical Trial.</div>
-        <div class="authors">Miller JL, Baschat AA, Johnson A et al. · JAMA 2026</div>
-        <div class="tags"><span class="tag">의료</span><span class="tag">임상시험</span><span class="tag type">신생아</span></div>
-      </div>
-    </div>
-    <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>이 연구는 태아 신장 실패로 인한 무양수증 환자에서 26주 이전에 시작된 연속 양수 주입이 치명적인 폐 저형성을 완화하는 데 효과적임을 보여주었다. 32명의 참가자 중 29명(91%)이 생존 출산하였고, 19명(65.5%)의 신생아가 14일 이상 생존하였다.</div>
-      <div class="detail"><h4>상세 요약</h4>무양수증은 태아 신장 실패로 인해 발생하며, 이는 치명적인 폐 저형성을 초래할 수 있다. 본 연구는 2018년 12월부터 2025년 2월까지 13개의 미국 태아 치료 센터에서 진행된 비무작위 임상 시험으로, 22주 이전에 태아 신장 실패로 무양수증이 발생한 임산부와 태아 쌍의 결과를 보고하였다. 32명의 참가자가 26주 이전에 시작된 연속 양수 주입을 받았고, 주요 결과는 14일 이상 생존한 신생아 수였다. 결과적으로 29명의 참가자 중 19명(65.5%)이 주요 결과를 달성하였고, 생존과 관련된 요인은 더 많은 양수 주입 횟수, 조산 전 양막 파열까지의 시간, 32주 이상의 임신 주수, 그리고 더 높은 출생 체중이었다. 결론적으로, 연속 양수 주입은 태아 신장 실패로 인한 무양수증에서 치명적인 폐 저형성을 완화하는 데 효과적이었다. 의사과학자 관점: 이 연구는 신약 개발에 있어 태아 치료의 새로운 접근 방식을 제시하며, 표적 치료 및 플랫폼 개발에 중요한 함의를 가진다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42384373/" target="_blank">PubMed</a><a href="https://doi.org/10.1001/jama.2026.8568" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>식물은 병원체에 맞서 패턴 유도 면역(PTI)과 효과기 유도 면역(ETI)을 활성화하지만, 이 시스템이 어떻게 조정되는지는 불분명하다. 본 연구에서는 표면 면역 신호가 mRNA 스플라이싱을 통해 NLR 면역 수용체의 활성화를 여는 조절 메커니즘을 발견하였다.</div>
+      <div class="detail"><h4>상세 요약</h4>식물은 병원체에 대항하기 위해 PTI와 ETI를 활성화한다. 그러나 이 두 시스템이 면역 활성화를 조정하면서 자가면역을 방지하는 방법은 잘 알려져 있지 않다. 본 연구에서는 감자 늦은 블라이트 저항 단백질 Rpi-vnt1.1의 N-말단 프로도메인이 저항체 형성을 억제하여 NLR의 자가 활성화를 방지하는 조절 메커니즘을 밝혀냈다. 병원체 인식 시 PTI 신호가 Rpi-vnt1.1 mRNA의 대체 스플라이싱을 유도하여 억제 요소를 제거하고, 이는 Rpi-vnt1.1이 Phytophthora infestans 효과기 AVRvnt1에 의해 활성화될 수 있도록 준비시켰다. 코일 코일형 NLR에서 N-말단 확장의 광범위한 보존은 자가 활성화를 방지하면서 병원체 감수성을 유지하는 공통의 조절 메커니즘을 시사한다. 의사과학자 관점: 이 연구는 신약 개발에 있어 표적 단백질의 스플라이싱 조절을 통한 면역 반응의 최적화를 제안한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42391383/" target="_blank">PubMed</a><a href="https://doi.org/10.1126/science.adx9929" target="_blank">DOI ↗</a></div>
     </div></div>
   </div><section id="cell-reports-medicine" class="jrnl"><span class="tick"></span><h2>Cell Reports Medicine</h2><span class="count">4편</span></section>
 
@@ -448,91 +416,106 @@
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">High-dose furmonertinib as first-line treatment for untreated EGFR-mutated advanced NSCLC with central nervous system metastases: A phase 2 trial.</div>
-        <div class="authors">Yan H, Jiang W, Xiong Y et al. · Cell reports. Medicine 2026</div>
-        <div class="tags"><span class="tag">폐암</span><span class="tag">신약개발</span><span class="tag type">임상시험</span></div>
+        <div class="title">Transplantation tolerance versus immune evasion: Mechanistic divergences and therapeutic frontiers for islet cell replacement.</div>
+        <div class="authors">Deuse T, Schrepfer S · Cell reports. Medicine 2026</div>
+        <div class="tags"><span class="tag">이식학</span><span class="tag">면역학</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>EGFR 변이가 있는 진행성 비소세포 폐암(NSCLC) 환자에서 고용량 푸르모너티닙(160mg)의 1차 치료 효과를 평가한 2상 연구로, 중앙신경계 전이 환자 40명을 대상으로 하였다. 18.66개월의 중간 추적 관찰 기간 동안, 중앙 무진행 생존 기간(mPFS)은 16.59개월, 전이성 뇌의 무진행 생존 기간은 17.83개월로 나타났으며, 전신 객관적 반응률(ORR)은 92.5%였다.</div>
-      <div class="detail"><h4>상세 요약</h4>EGFR 변이가 있는 비소세포 폐암 환자에서 뇌 전이는 치료 실패의 주요 원인으로 작용한다. 본 연구는 40명의 치료받지 않은 환자에게 푸르모너티닙을 160mg씩 투여하여 그 효과를 평가하였다. 연구 결과, 중앙 무진행 생존 기간(mPFS)은 16.59개월, 전이성 뇌의 무진행 생존 기간은 17.83개월로 나타났으며, 전신 객관적 반응률(ORR)은 92.5%, 뇌 내 객관적 반응률은 95.0%로 확인되었다. 3등급 이상의 치료 관련 부작용은 15.0%에서 발생하였고, 혈장 및 뇌척수액의 탐색적 프로파일링을 통해 높은 EGFR 변이 제거율을 보였다. 푸르모너티닙은 EGFR 변이가 있는 CNS 전이 비소세포 폐암의 1차 치료제로서 유망한 효과와 안전성을 보여주었다. 의사과학자 관점: 신약개발에 있어 푸르모너티닙의 CNS 전이에 대한 효과는 새로운 표적 치료 접근법을 제시한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42379171/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102904" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>이식 수용체의 면역 관용과 면역 회피는 서로 다른 기전으로, 면역 관용은 수용체 중심의 접근법을 통해 이식 거부 반응을 최소화하고, 면역 회피는 이식 조직이 면역 반응을 피하도록 설계된다. 이 연구는 췌장 이식 대체 요법의 발전을 다루며, 최근 줄기세포 유래 이식 제품의 발전이 포함된다.</div>
+      <div class="detail"><h4>상세 요약</h4>이식 수술은 만성 면역 억제의 독성으로 어려움을 겪고 있으며, 지속적인 치료 없이 이식 수용을 위한 혁신이 필요하다. 면역 관용은 혼합 조혈 세포 chimerism과 흉선 레퍼토리 조각화를 통해 중앙 삭제 과정을 활용하고, T 세포 무기력, 소진, 세포 사멸 및 조절 T 세포 우세와 같은 주변 기전을 보완한다. 보조 자극 차단제가 이러한 경로를 강화하지만, 감염이나 염증으로 인해 불안정해질 수 있다. 반면, 면역 회피는 이식 조직이 적응성 이식 거부 반응 및 자가 면역 인식을 피하도록 설계하는 제품 중심의 접근법이다. 이러한 기전의 차이는 동적인 수용체 조절과 강력한 이식 조직의 은폐를 강조하며, 세포 및 오르가노이드 이식에 대한 실증적 검증이 이루어졌다. 이 리뷰는 40년 이상 임상적으로 사용된 사체 이식 췌장 이식과 최근의 줄기세포 유래 이식 제품의 발전을 중점적으로 다룬다. 의사과학자 관점: 신약개발에 있어 면역 관용과 면역 회피의 기전 이해는 새로운 치료 플랫폼 개발에 중요한 함의를 가진다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42392079/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102888" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Multi-omics profiling unveils biological and clinical insights into pulmonary sarcomatoid carcinoma.</div>
-        <div class="authors">Sun L, Wang J, Yan Y et al. · Cell reports. Medicine 2026</div>
-        <div class="tags"><span class="tag">폐암</span><span class="tag">다중오믹스</span><span class="tag type">신약개발</span></div>
+        <div class="title">Differential T cell clonal dynamics underlie outcomes to frontline chemoimmunotherapy in advanced gastric cancer.</div>
+        <div class="authors">Wright SJ, Kang S, An M et al. · Cell reports. Medicine 2026</div>
+        <div class="tags"><span class="tag">면역치료</span><span class="tag">위암</span><span class="tag type">생명과학</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 폐 육종형 암(PSC)의 다중 오믹스 분석을 통해 이 암의 생물학적 및 임상적 통찰을 제공한다. 86명의 PSC 환자로부터 수집된 데이터 분석 결과, PSC 종양에서 ferroptosis 억제 신호가 증가하며, FTL 및 SLC3A2를 표적으로 하여 ferroptosis에 대한 취약성을 입증하였다.</div>
-      <div class="detail"><h4>상세 요약</h4>폐 육종형 암(PSC)은 드물지만 침습성이 강한 폐암으로, 아직 잘 이해되지 않고 있다. 본 연구에서는 86명의 PSC 환자로부터 전체 엑솜 시퀀싱, 전사체, 단백체 및 인산화 단백체 데이터를 통합하여 다중 오믹스 분석을 수행하였다. 또한, 3명의 환자에서 면역화학요법을 받는 단일 세포 RNA 시퀀싱(scRNA-seq) 데이터를 포함하였다. 분석 결과, PSC 종양에서 ferroptosis 억제 신호가 증가하고, FTL 및 SLC3A2를 표적으로 하여 ferroptosis에 대한 취약성을 확인하였다. 면역 환경 특성화는 차가운 종양, 다형성 암 및 PTEN 변이 간의 연관성을 보여주었다. 단백체 프로파일링을 통해 세 가지 뚜렷한 환자 아형을 확인하였으며, 각 아형은 미세환경의 교란, 유전적 변화 및 잠재적 치료 표적에 대한 고유한 특징을 보였다. scRNA-seq 분석은 암세포에서 육종세포로의 진행 및 PSC에서 면역요법 저항성에 있어 상피-간엽 전이의 역할을 제안하였다. 이 연구는 PSC의 기전 통찰 및 잠재적 치료 표적을 조사하는 데 유용한 자원으로 작용한다. 의사과학자 관점: PSC의 다중 오믹스 특성화는 신약개발에 있어 새로운 표적 및 플랫폼을 제시한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42361801/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102887" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>항암화학요법에 항PD-1을 추가한 진행성 위암 환자에서 T 세포 클론 동역학이 치료 결과에 영향을 미친다. 33명의 환자에서 66,813개의 T 세포를 분석한 결과, 느린 진행 환자에서 T 세포의 풍부함과 지속성이 증가하며, 이는 치료 반응의 지속성과 관련이 있다.</div>
+      <div class="detail"><h4>상세 요약</h4>이 연구는 진행성 위암 환자에서 항PD-1과 5-FU/플래티넘의 병용요법에 대한 반응의 변동성을 이해하기 위해 수행되었다. 단일 세포 RNA 시퀀싱과 T 세포 수용체(TCR) 시퀀싱을 통해 치료 전, 항암화학요법 후, 면역요법 후의 T 세포를 분석하였다. 느린 진행 환자에서 T 세포의 풍부함과 지속성이 증가하며, 이는 B 세포와 T 세포 간의 상호작용을 통해 T 세포 기억 및 공동 자극을 지원하는 메커니즘으로 설명된다. 면역요법 후 종양에서 나타나는 T 세포 클론은 느린 진행 환자의 치료 전 혈액에서도 발견되었다. 이러한 메커니즘은 진행성 위암에서의 항암화학요법에 대한 지속적인 반응을 이끌어낼 수 있음을 강조한다. 의사과학자 관점: 신약개발에 있어 T 세포 클론 동역학의 이해는 표적 치료 및 플랫폼 개발에 중요한 함의를 가진다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42392078/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102910" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Case of complete response to immunotherapy in MMR-deficient prostate cancer associated with NK-like and CD4</div>
-        <div class="authors">Tsai AK, Lozada JR, Kennedy PR et al. · Cell reports. Medicine 2026</div>
-        <div class="tags"><span class="tag">전립선암</span><span class="tag">면역요법</span><span class="tag type">의사과학</span></div>
+        <div class="title">Targeted DNA triplex-forming oligonucleotide liposome for pulmonary fibrosis gene therapy.</div>
+        <div class="authors">Xu J, Xie Y, Luo Q et al. · Cell reports. Medicine 2026</div>
+        <div class="tags"><span class="tag">폐질환</span><span class="tag">유전자치료</span><span class="tag type">신약개발</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>MMR 결핍 전립선암 환자에서 면역요법인 pembrolizumab이 완전 반응을 유도하였다. 이 환자는 높은 종양 변이 부담(TMB)과 비정상적인 T 세포 집단을 보였다. 이러한 결과는 면역요법의 효과를 뒷받침한다.</div>
-      <div class="detail"><h4>상세 요약</h4>전립선암에서 MMR 결핍과 마이크로위성 불안정성은 드물게 발생하며, 이로 인해 종양 변이 부담이 증가한다. 본 연구에서는 MSH2 및 MSH6 유전자 결실을 가진 환자에서 pembrolizumab이 완전한 방사선학적, 병리학적, 분자적 반응을 유도한 사례를 보고한다. 디지털-공간 현미경, 단일 세포 RNA/T 세포 수용체 시퀀싱, 다중 세포 분석을 통해 자연 살해 세포 유사 표현형을 가진 비정형 종양 침윤 T 세포와 CD4+CD8+ 이중 양성 림프구를 확인하였다. 이러한 T 세포 집단은 면역 체크포인트 억제제 치료 후 선호적으로 확장되며, 임상 반응을 유도할 수 있는 세포 독성 프로파일을 채택한다. 이 연구 결과는 MMR 결핍 고형 종양에서 면역요법이 어떻게 깊은 반응을 유도하는지를 밝힌다. 의사과학자 관점: 이 연구는 신약개발에서 면역요법의 잠재력을 강조한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42361800/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102889" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>본 연구는 폐섬유증 유전자 치료를 위한 표적 DNA 삼중가닥 형성 올리고뉴클레오타이드 리포좀(tLipo-TFO1)을 개발하여, 세포 외 기질의 축적 제거를 가속화하는 방법을 제시한다. tLipo-TFO1은 Serpine1 유전자의 발현을 차단하여 PAI-1 단백질 기능을 하향 조절하며, 폐섬유증 모델 생쥐에서 유의미한 치료 효과를 보였다.</div>
+      <div class="detail"><h4>상세 요약</h4>폐섬유증은 치료가 어려운 심각한 질환으로, 효과적인 임상 치료 전략이 필요하다. 폐섬유증의 주요 원인은 세포 외 기질의 과도한 축적이며, PAI-1의 과발현이 이 과정의 주요 원인 중 하나이다. 본 연구에서는 폐섬유증 유전자 치료를 위해 tLipo-TFO1을 개발하였으며, 이는 폐섬유증 세포에서 Serpine1 유전자의 발현을 차단하여 PAI-1 단백질 기능을 하향 조절하는 효과를 가진다. 기능 평가 결과, 폐섬유증 표적화 및 섬유소 용해 활성화 효과가 확인되었으며, 폐섬유증 모델 생쥐에서 유의미한 치료 효과를 나타냈다. 따라서, 이 표적 DNA TFO 리포좀이 폐섬유증에 대한 유전자 치료 접근법이 될 수 있음을 제안한다. 의사과학자 관점: 신약개발에 있어 표적 유전자 치료의 가능성을 보여준다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42385711/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102909" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
-        <div class="title">Design optimization of antibody-ligand motifs to enhance CAR-T redirection activity against solid tumors.</div>
-        <div class="authors">Wang X, Li S, Guo Q et al. · Cell reports. Medicine 2026</div>
-        <div class="tags"><span class="tag">면역치료</span><span class="tag">CAR-T</span><span class="tag type">항체</span></div>
+        <div class="title">Metabolomic and lifestyle profiles refine BMI-metabolic phenotypes in older adults.</div>
+        <div class="authors">Chen Y, Huang H, Xu W et al. · Cell reports. Medicine 2026</div>
+        <div class="tags"><span class="tag">대사체</span><span class="tag">노인건강</span><span class="tag type">의사과학</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>본 연구는 다중 표적 스위치형 CAR-T(sCAR-T) 전략을 통해 항원 이질성과 종양 미세환경 문제를 해결하고, HER2 및 VEGFR1/2를 동시에 타겟으로 하는 항체-리간드 모티프를 최적화하여 CAR-T의 종양 제거 능력을 향상시켰다.</div>
-      <div class="detail"><h4>상세 요약</h4>CAR-T 치료의 주요 장애물인 항원 이질성과 종양 미세환경을 극복하기 위해, 본 연구에서는 T 세포에 보편적 수용체와 항체-리간드 모티프를 통합한 다중 표적 스위치형 CAR-T 전략을 제안하였다. 최적화된 스위치와 CAR 힌지는 리간드의 본래 이량체 구조를 유지하여 항원 인식을 향상시키고 면역 시냅스 형성을 촉진하였다. 자가 이식 및 이종 이식 모델에서 sCAR-T는 기존 CAR-T보다 우수한 종양 제거 및 혈관 파괴 효과를 보였으며, 항원 이질성에 의한 면역 회피를 극복하였다. 또한, ROR1을 타겟으로 하는 sCAR-T 설계를 확장하여 복합 항원 타겟팅을 위한 다목적 프레임워크를 제공함으로써 면역 요법의 효능과 안전성을 개선할 수 있는 가능성을 제시하였다. 의사과학자 관점: 본 연구는 신약개발에서 복합 항원 조합을 타겟으로 하는 플랫폼의 중요성을 강조한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42349416/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102885" target="_blank">DOI ↗</a></div>
+      <div class="core"><b>핵심 요약</b><br>BMI 기반 분류는 노인에서의 대사 위험 평가에 한계를 보인다. 13,202명의 노인을 대상으로 한 대사체 분석을 통해 39개의 핵심 대사물질을 활용한 기계 학습 모델을 개발하여 AUC 0.763에서 0.801을 달성하였다. 이 모델은 대사 기능 장애를 정확히 식별하고, BMI-대사 건강 점수(BMHS)가 사망률 예측에 기여함을 보여준다.</div>
+      <div class="detail"><h4>상세 요약</h4>전통적인 BMI 기반 분류는 노인의 대사 위험 평가에서 정밀도가 떨어진다. 본 연구에서는 13,202명의 노인을 대상으로 대사체 분석을 수행하고, 39개의 핵심 대사물질을 활용하여 다양한 BMI 범주에서 대사 기능 장애를 식별하는 기계 학습 모델을 개발하였다. 이 모델은 AUC 0.763에서 0.801을 달성하며, 공유된 대사 변화와 비만 특유의 변화를 드러낸다. 또한, BMI-대사 건강 점수(BMHS)는 BMI-대사 표현형을 넘어 모든 원인 및 심혈관 사망률을 독립적으로 예측하며, 생활 습관 요인과 결합할 때 개선된 계층화를 제공한다. 이러한 발견은 노인 인구의 정밀 예방을 위한 대사체 기반의 행동 수정 가능 전략을 지지하며, BMI 중심의 패러다임에 도전하고 노인의 대사 건강 평가를 위한 확장 가능한 접근 방식을 제시한다. 의사과학자 관점: 대사체 분석을 통한 신약 개발 및 표적 치료 접근의 중요성을 강조한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42385710/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.xcrm.2026.102907" target="_blank">DOI ↗</a></div>
     </div></div>
-  </div><section id="nature-cancer" class="jrnl"><span class="tick"></span><h2>Nature Cancer</h2><span class="count">2편</span></section>
+  </div><section id="nature-cancer" class="jrnl"><span class="tick"></span><h2>Nature Cancer</h2><span class="count">3편</span></section>
 
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div>
+        <div class="title">IDH1-mutant vaccine in newly diagnosed astrocytoma: final analysis of the multicenter, single-arm, open-label, first-in-human phase 1 NOA16 trial.</div>
+        <div class="authors">Bunse L, Lindner K, Wick A et al. · Nature cancer 2026</div>
+        <div class="tags"><span class="tag">신약개발</span><span class="tag">임상시험</span><span class="tag type">면역요법</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>IDH1-R132H 변이를 가진 신경교종 환자를 대상으로 한 1상 임상시험에서 IDH1-peptide 백신이 안전성과 면역원성을 입증하였다. 8년 생존율은 42%로, 4기 신경교종 환자의 중앙 생존 기간은 106.1개월로 기존 데이터보다 유의미하게 개선되었다.</div>
+      <div class="detail"><h4>상세 요약</h4>IDH1R132H 변이는 주요 조직 적합성 복합체 II 제한 신생항원으로 작용한다. 본 연구는 33명의 새로 진단된 3기 및 4기 IDH1-R132H+ 신경교종 환자를 대상으로 한 다기관 1상 임상시험의 장기 추적 결과를 보고한다. 8년 무진행 생존율은 42%, 전체 생존율은 66%였다. 4기 신경교종 환자의 중앙 생존 기간은 106.1개월로, 기존 문헌의 31.6-56.4개월과 비교하여 유리한 결과를 보였다. 응답자 그룹에서는 IDH1-R132H에 대한 지속적인 항체 반응이 긍정적인 장기 임상 경과와 연관되었다. IDH1-vac에 의해 유도된 T 세포 반응은 염증이 있는 뇌 병변에서 발견되었으나, 초기 진행 질환 환자에서는 발견되지 않았다. NOA16 코호트의 긍정적인 장기 결과는 무작위 2상 시험에서 IDH1-vac의 추가 연구를 지지한다. 의사과학자 관점: 신약개발에 있어 IDH1 변이를 표적으로 하는 백신의 가능성을 제시한다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42387024/" target="_blank">PubMed</a><a href="https://doi.org/10.1007/s00401-015-1519-8" target="_blank">DOI ↗</a></div>
+    </div></div>
+  </div>
+  <div class="card">
+    <div class="head" onclick="this.parentNode.classList.toggle('open')">
+      <span class="tri">▶</span>
+      <div>
+        <div class="title">GPNMB-directed CAR T cell therapy against MiT/TFE-family fusion-driven solid tumors.</div>
+        <div class="authors">Zemp FJ, Breckenridge Z, Song H et al. · Nature cancer 2026</div>
+        <div class="tags"><span class="tag">신약개발</span><span class="tag">CAR T 세포</span><span class="tag type">고형 종양</span></div>
+      </div>
+    </div>
+    <div class="body"><div class="inner">
+      <div class="core"><b>핵심 요약</b><br>GPNMB를 표적으로 하는 CAR T 세포 치료법이 MiT/TFE 가족 융합에 의해 유도된 고형 종양에서 효과적임을 입증하였다. GCAR1은 환자 맞춤형 세포 및 모델에서 강력한 활성을 보였으며, 임상 시험에서 안정적인 질병 상태를 유도하고 잘 견딜 수 있는 것으로 나타났다.</div>
+      <div class="detail"><h4>상세 요약</h4>고형 종양에 대한 CAR T 세포 치료는 안전하고 균일하게 발현되는 세포 표적의 부족으로 제한된다. 본 연구에서는 GPNMB라는 MiT/TFE 가족 융합 단백질이 주요 및 재발성 알베올라 소프트 파트 육종(ASPS)과 전이성 신세포암에서 높은 발현을 보임을 확인하였다. GPNMB를 표적으로 하는 CAR T 세포 제품인 GCAR1을 개발하였고, 이는 환자 맞춤형 세포, 오르가노이드 및 이식 모델에서 강력한 활성을 나타냈다. 첫 번째 인간 대상 개방형 임상 시험(NCT07104682)에서 GCAR1은 재발/내성 전이성 ASPS 환자에게서 3개월 동안 안정적인 질병 상태를 유도하였으며, 많은 비표적 병변의 해소가 동반되었다. GCAR1 T 세포는 말초 혈액에서 다클론 집단으로 확장되며 1개월 동안 검출 가능하였다. 공간 전사체 분석을 통해 치료 저항성 병변에서 면역 억제적 환경이 확인되었고, 면역 체크포인트 억제제가 GCAR1과 시너지 효과를 나타냈다. 이러한 데이터는 GPNMB 발현 고형 종양 치료를 위한 GCAR1의 개념 증명을 제공하며, CAR T 세포 치료를 통한 종양 유전자 융합에 의해 유도된 표면 항원의 보다 광범위한 표적화 가능성을 제시한다. 의사과학자 관점: GPNMB 표적 CAR T 세포 치료는 신약개발에 있어 새로운 플랫폼으로서의 가능성을 보여준다.</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42387022/" target="_blank">PubMed</a><a href="https://doi.org/10.3389/fimmu.2022.1074740" target="_blank">DOI ↗</a></div>
+    </div></div>
+  </div>
   <div class="card">
     <div class="head" onclick="this.parentNode.classList.toggle('open')">
       <span class="tri">▶</span>
       <div>
         <div class="title">Long-term outcomes of adjuvant metronomic capecitabine in locoregionally advanced nasopharyngeal carcinoma: a randomized, controlled, multicenter, phase 3 study.</div>
         <div class="authors">Tao YL, Wu DH, Zhou Q et al. · Nature cancer 2026</div>
-        <div class="tags"><span class="tag">암연구</span><span class="tag">임상시험</span><span class="tag type">신약개발</span></div>
+        <div class="tags"><span class="tag">항암제</span><span class="tag">임상시험</span><span class="tag type">비인두암</span></div>
       </div>
     </div>
     <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>이 연구는 국소 진행성 비인두암 환자에서 보조 메트로노믹 카페시타빈의 장기 결과를 보고한다. 406명의 환자가 무작위로 보조 치료를 받은 그룹과 관찰 그룹으로 나뉘었으며, 메트로노믹 카페시타빈은 전체 생존율을 유의미하게 개선하였다(P=0.019).</div>
-      <div class="detail"><h4>상세 요약</h4>국소 진행성 비인두암 환자에서 보조 메트로노믹 카페시타빈의 장기 치료 효과를 평가하기 위해 다기관, 무작위, 대조군, 3상 시험을 실시하였다. 406명의 환자가 1:1 비율로 보조 치료 그룹(메트로노믹 카페시타빈)과 관찰 그룹에 배정되었다. 주요 평가 지표인 무진행 생존율을 포함하여 전체 생존율, 원거리 재발 없는 생존율, 국소 재발 없는 생존율 및 안전성을 평가하였다. 메트로노믹 카페시타빈 그룹은 중간 추적 관찰 기간 71.3개월 동안 전체 생존율이 유의미하게 개선되었으며, 3등급 이상 부작용은 메트로노믹 카페시타빈 그룹에서 17%에서 발생하였다. 1년 치료 과정을 완료한 환자는 전체 생존율이 개선되었고, 방사선 치료 후 호중구 대 림프구 비율이 높은 환자가 더 큰 혜택을 보았다. 이러한 결과는 국소 진행성 비인두암에서 보조 메트로노믹 카페시타빈의 장기 치료 효과를 지지한다. 의사과학자 관점: 신약개발에 있어 메트로노믹 요법의 가능성을 제시한다.</div>
+      <div class="core"><b>핵심 요약</b><br>이 연구는 국소진행성 비인두암 환자에서 보조 메트로노믹 카페시타빈의 장기 결과를 보고합니다. 406명의 환자가 메트로노믹 카페시타빈을 1년 동안 투여받은 그룹과 관찰 그룹으로 무작위 배정되었으며, 메트로노믹 카페시타빈이 전체 생존율을 유의미하게 개선한 결과를 나타냈습니다.</div>
+      <div class="detail"><h4>상세 요약</h4>이 다기관, 공개, 병렬 그룹, 무작위 대조 3상 시험에서는 406명의 환자가 정의된 화학요법과 방사선 치료를 완료한 후 메트로노믹 카페시타빈(650 mg/m², 하루 2회, 1년) 또는 관찰 그룹으로 무작위 배정되었습니다. 주요 평가 지표는 무재발 생존율이었으며, 부가적인 평가 지표로는 전체 생존율, 원거리 재발 없는 생존율, 국소 재발 없는 생존율 및 안전성이 포함되었습니다. 연구는 주요 평가 지표를 충족하였고, 71.3개월의 중앙 추적 관찰 기간 동안 메트로노믹 카페시타빈이 전체 생존율을 유의미하게 개선하였습니다(위험비 0.53, P=0.019). 3등급 이상 부작용은 메트로노믹 카페시타빈 그룹의 17%에서 발생하였고, 1년 치료 완료가 전체 생존율 개선과 연관이 있음을 보여주었습니다. 의사과학자 관점: 이 연구는 국소진행성 비인두암의 신약 개발에 있어 메트로노믹 요법의 장기적 이점을 강조합니다.</div>
       <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42380630/" target="_blank">PubMed</a><a href="https://doi.org/10.1016/j.jclinepi.2010.11.016" target="_blank">DOI ↗</a></div>
-    </div></div>
-  </div>
-  <div class="card">
-    <div class="head" onclick="this.parentNode.classList.toggle('open')">
-      <span class="tri">▶</span>
-      <div>
-        <div class="title">GABA signaling activation drives glioblastoma progression in female mice through myeloid-derived suppressor cells.</div>
-        <div class="authors">Pathak A, Sravya P, Colon B et al. · Nature cancer 2026</div>
-        <div class="tags"><span class="tag">신경과학</span><span class="tag">암연구</span><span class="tag type">면역학</span></div>
-      </div>
-    </div>
-    <div class="body"><div class="inner">
-      <div class="core"><b>핵심 요약</b><br>GABA 신호 활성화가 여성 쥐에서 미세아교세포 유래 억제세포를 통해 신경교종 진행을 촉진한다. GABBR 작용제는 여성 모델에서 신경교종 성장을 촉진하고, GABBR 길항제는 생존을 연장시킨다.</div>
-      <div class="detail"><h4>상세 요약</h4>면역 반응의 성 차이가 암 결과와 치료 반응에 영향을 미치지만, 이러한 상호작용의 기초가 되는 호스트 요인은 잘 이해되지 않았다. 본 연구에서는 GABA가 여성 특이적으로 신경교종을 촉진하는 면역 반응의 주동자로 작용함을 밝혀냈다. GABBR 신호가 여성 쥐의 미세아교세포 유래 억제세포의 T 세포 억제 기능을 강화하며, NOS2 경로를 통해 GABA 농도가 높은 여성 GBM 환자에서 GABA 전사 서명이 풍부하다는 결과를 보였다. 이러한 결과는 GABA의 성별 특이적 면역 조절 역할을 강조하며, 향후 GABA 경로 억제제를 암 면역 치료제로 평가할 필요성을 지지한다. 의사과학자 관점: GABA 경로의 억제는 신약 개발에 있어 성별 특이적 접근을 가능하게 한다.</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/42337052/" target="_blank">PubMed</a><a href="https://doi.org/10.1093/gigascience/giaa109" target="_blank">DOI ↗</a></div>
     </div></div>
   </div>
 <footer>데이터 출처 PubMed · 요약 OpenAI · 매주 월요일 자동 갱신 · 최근 한 달 게재분(저널별 최신순)<br>
